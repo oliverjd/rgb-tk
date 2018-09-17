@@ -3,17 +3,16 @@
 
 
 #include <memory>
-#include "VirtualController.h"
-#include "Controller44KeyState.h"
-#include "Remote44Key.h"
+#include "../emulator/VirtualController.h"
+#include "Controller44.h"
+#include "Remote44.h"
 
 class VirtualController;
-class Remote44Key;
+class Remote44;
 
-class GenericController: public Controller44KeyState {
+class GenericController: public Controller44 {
 public:
-    GenericController();
-    void createRemoteObjects(std::shared_ptr<VirtualController> = nullptr);
+    GenericController(std::shared_ptr<VirtualController>);
 
     void togglePower();
     void turnPowerOn();
@@ -24,7 +23,7 @@ public:
     void changeBrightness(bool increase);
 
 private:
-    std::shared_ptr<Remote44Key> remote44;
+    std::shared_ptr<Remote44> remote44;
 
 };
 

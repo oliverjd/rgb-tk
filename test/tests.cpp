@@ -1,4 +1,4 @@
 #include "catch.hpp"
-#include "../src/GenericController.h"
+#include "../src/controller/GenericController.h"
 
 

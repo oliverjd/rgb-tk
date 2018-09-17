@@ -1,7 +1,9 @@
 #include "GenericController.h"
-#include "VirtualController.h"
+#include "../emulator/VirtualController.h"
 
-GenericController::GenericController() = default;
+GenericController::GenericController(std::shared_ptr<VirtualController> virtualController) {
+    remote44 = std::make_shared<Remote44>(virtualController);
+};
 
 void GenericController::togglePower() {
     powerIsOn = !powerIsOn;
@@ -20,10 +22,6 @@ void GenericController::turnPowerOff() {
         powerIsOn = false;
         remote44->sendButtonPress(button_power);
     }
-}
-
-void GenericController::createRemoteObjects(std::shared_ptr<VirtualController> virtualController) {
-    remote44 = std::make_shared<Remote44Key>(virtualController);
 }
 
 void GenericController::switchToPreset(char colour, char number) {

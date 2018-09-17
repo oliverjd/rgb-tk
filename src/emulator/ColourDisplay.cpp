@@ -6,7 +6,9 @@
 #define FOREGROUND 0
 #define BACKGROUND 1
 
-ColourDisplay::ColourDisplay() = default;
+ColourDisplay::ColourDisplay() {
+    ncursesSetup();
+};
 
 void ColourDisplay::updateDisplayedColour(int red0to255, int green0to255, int blue0to255) {
 
@@ -21,10 +23,18 @@ void ColourDisplay::updateDisplayedColour(int red0to255, int green0to255, int bl
     printw(msg.c_str());
 }
 
-void ColourDisplay::initColourDisplay() {
+void ColourDisplay::ncursesSetup() {
+    initscr();
+    clear();
+    noecho();
+    cbreak();
+    start_color();
+    keypad(stdscr, true);
+    curs_set(0);
+    scrollok(stdscr,TRUE);
+
     init_color(FOREGROUND, 1000, 1000, 1000);
     init_color(BACKGROUND, 0,0,0);
-
     init_pair(1, FOREGROUND, BACKGROUND);
     wbkgd(stdscr, COLOR_PAIR(1));
 }

@@ -3,8 +3,7 @@
 
 
 #include "ncurses.h"
-#include "Rgb44.h"
-#include "GenericController.h"
+#include "../controller/GenericController.h"
 #include <string>
 
 class GenericController;
@@ -12,8 +11,9 @@ class GenericController;
 class KeyboardListener {
 public:
     KeyboardListener(std::shared_ptr<GenericController>);
-    void listenForKeypress();
 private:
+    void listenForKeypress();
+
     const std::string KEY_WAITING_MESSAGE = "Press keys to control LED.\n";
     static const int DIY_KEY = 'd';
     static const int PRESET_KEY = 'c';

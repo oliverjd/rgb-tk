@@ -5,10 +5,10 @@
 class ColourDisplay {
 public:
     ColourDisplay();
-    void initColourDisplay();
     void updateDisplayedColour(int, int, int);
 
 private:
+    void ncursesSetup();
 };
 
 

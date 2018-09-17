@@ -70,122 +70,152 @@ CMakeFiles/rgb_me.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/main.cpp -o CMakeFiles/rgb_me.dir/main.cpp.s
 
-CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o: ../src/Remote44Key.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/Remote44Key.cpp
+CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o: ../src/controller/Remote44.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.cpp
 
-CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/Remote44Key.cpp > CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.i
+CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.cpp > CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.i
 
-CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/Remote44Key.cpp -o CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.s
+CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.cpp -o CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.s
 
-CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o: ../src/Controller44KeyState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/Controller44KeyState.cpp
+CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o: ../src/controller/Controller44.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.cpp
 
-CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/Controller44KeyState.cpp > CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.i
+CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.cpp > CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.i
 
-CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/Controller44KeyState.cpp -o CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.s
+CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.cpp -o CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.s
 
-CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o: ../src/LircWrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/LircWrapper.cpp
+CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o: ../src/controller/LircWrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.cpp
 
-CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/LircWrapper.cpp > CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.i
+CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.cpp > CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.i
 
-CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/LircWrapper.cpp -o CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.s
+CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.cpp -o CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.s
 
-CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o: ../src/VirtualController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/VirtualController.cpp
+CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o: ../src/emulator/VirtualController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.cpp
 
-CMakeFiles/rgb_me.dir/src/VirtualController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/VirtualController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/VirtualController.cpp > CMakeFiles/rgb_me.dir/src/VirtualController.cpp.i
+CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.cpp > CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.i
 
-CMakeFiles/rgb_me.dir/src/VirtualController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/VirtualController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/VirtualController.cpp -o CMakeFiles/rgb_me.dir/src/VirtualController.cpp.s
+CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.cpp -o CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.s
 
-CMakeFiles/rgb_me.dir/src/GenericController.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/GenericController.cpp.o: ../src/GenericController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rgb_me.dir/src/GenericController.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/GenericController.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/GenericController.cpp
+CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o: ../src/controller/GenericController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.cpp
 
-CMakeFiles/rgb_me.dir/src/GenericController.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/GenericController.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/GenericController.cpp > CMakeFiles/rgb_me.dir/src/GenericController.cpp.i
+CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.cpp > CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.i
 
-CMakeFiles/rgb_me.dir/src/GenericController.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/GenericController.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/GenericController.cpp -o CMakeFiles/rgb_me.dir/src/GenericController.cpp.s
+CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.cpp -o CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.s
 
-CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o: ../src/KeyboardListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/KeyboardListener.cpp
+CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o: ../src/emulator/KeyboardListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.cpp
 
-CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/KeyboardListener.cpp > CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.i
+CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.cpp > CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.i
 
-CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/KeyboardListener.cpp -o CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.s
+CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.cpp -o CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.s
 
-CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o: CMakeFiles/rgb_me.dir/flags.make
-CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o: ../src/ColourDisplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/ColourDisplay.cpp
+CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o: ../src/emulator/ColourDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.cpp
 
-CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/ColourDisplay.cpp > CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.i
+CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.cpp > CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.i
 
-CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/ColourDisplay.cpp -o CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.s
+CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.cpp -o CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.s
+
+CMakeFiles/rgb_me.dir/src/Colour.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/Colour.cpp.o: ../src/Colour.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rgb_me.dir/src/Colour.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/Colour.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.cpp
+
+CMakeFiles/rgb_me.dir/src/Colour.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/Colour.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.cpp > CMakeFiles/rgb_me.dir/src/Colour.cpp.i
+
+CMakeFiles/rgb_me.dir/src/Colour.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/Colour.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.cpp -o CMakeFiles/rgb_me.dir/src/Colour.cpp.s
+
+CMakeFiles/rgb_me.dir/src/Queue.cpp.o: CMakeFiles/rgb_me.dir/flags.make
+CMakeFiles/rgb_me.dir/src/Queue.cpp.o: ../src/Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rgb_me.dir/src/Queue.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rgb_me.dir/src/Queue.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-me/src/Queue.cpp
+
+CMakeFiles/rgb_me.dir/src/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rgb_me.dir/src/Queue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-me/src/Queue.cpp > CMakeFiles/rgb_me.dir/src/Queue.cpp.i
+
+CMakeFiles/rgb_me.dir/src/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rgb_me.dir/src/Queue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-me/src/Queue.cpp -o CMakeFiles/rgb_me.dir/src/Queue.cpp.s
 
 # Object files for target rgb_me
 rgb_me_OBJECTS = \
 "CMakeFiles/rgb_me.dir/main.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/GenericController.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o" \
-"CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o"
+"CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/Colour.cpp.o" \
+"CMakeFiles/rgb_me.dir/src/Queue.cpp.o"
 
 # External object files for target rgb_me
 rgb_me_EXTERNAL_OBJECTS =
 
 rgb_me: CMakeFiles/rgb_me.dir/main.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/GenericController.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o
-rgb_me: CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/Colour.cpp.o
+rgb_me: CMakeFiles/rgb_me.dir/src/Queue.cpp.o
 rgb_me: CMakeFiles/rgb_me.dir/build.make
 rgb_me: CMakeFiles/rgb_me.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable rgb_me"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable rgb_me"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgb_me.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

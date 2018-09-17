@@ -163,194 +163,248 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/ColourDisplay.o: src/ColourDisplay.cpp.o
+src/Colour.o: src/Colour.cpp.o
 
-.PHONY : src/ColourDisplay.o
-
-# target to build an object file
-src/ColourDisplay.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.o
-.PHONY : src/ColourDisplay.cpp.o
-
-src/ColourDisplay.i: src/ColourDisplay.cpp.i
-
-.PHONY : src/ColourDisplay.i
-
-# target to preprocess a source file
-src/ColourDisplay.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.i
-.PHONY : src/ColourDisplay.cpp.i
-
-src/ColourDisplay.s: src/ColourDisplay.cpp.s
-
-.PHONY : src/ColourDisplay.s
-
-# target to generate assembly for a file
-src/ColourDisplay.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/ColourDisplay.cpp.s
-.PHONY : src/ColourDisplay.cpp.s
-
-src/Controller44KeyState.o: src/Controller44KeyState.cpp.o
-
-.PHONY : src/Controller44KeyState.o
+.PHONY : src/Colour.o
 
 # target to build an object file
-src/Controller44KeyState.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.o
-.PHONY : src/Controller44KeyState.cpp.o
+src/Colour.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Colour.cpp.o
+.PHONY : src/Colour.cpp.o
 
-src/Controller44KeyState.i: src/Controller44KeyState.cpp.i
+src/Colour.i: src/Colour.cpp.i
 
-.PHONY : src/Controller44KeyState.i
+.PHONY : src/Colour.i
 
 # target to preprocess a source file
-src/Controller44KeyState.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.i
-.PHONY : src/Controller44KeyState.cpp.i
+src/Colour.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Colour.cpp.i
+.PHONY : src/Colour.cpp.i
 
-src/Controller44KeyState.s: src/Controller44KeyState.cpp.s
+src/Colour.s: src/Colour.cpp.s
 
-.PHONY : src/Controller44KeyState.s
+.PHONY : src/Colour.s
 
 # target to generate assembly for a file
-src/Controller44KeyState.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Controller44KeyState.cpp.s
-.PHONY : src/Controller44KeyState.cpp.s
+src/Colour.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Colour.cpp.s
+.PHONY : src/Colour.cpp.s
 
-src/GenericController.o: src/GenericController.cpp.o
+src/Queue.o: src/Queue.cpp.o
 
-.PHONY : src/GenericController.o
+.PHONY : src/Queue.o
 
 # target to build an object file
-src/GenericController.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/GenericController.cpp.o
-.PHONY : src/GenericController.cpp.o
+src/Queue.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Queue.cpp.o
+.PHONY : src/Queue.cpp.o
 
-src/GenericController.i: src/GenericController.cpp.i
+src/Queue.i: src/Queue.cpp.i
 
-.PHONY : src/GenericController.i
+.PHONY : src/Queue.i
 
 # target to preprocess a source file
-src/GenericController.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/GenericController.cpp.i
-.PHONY : src/GenericController.cpp.i
+src/Queue.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Queue.cpp.i
+.PHONY : src/Queue.cpp.i
 
-src/GenericController.s: src/GenericController.cpp.s
+src/Queue.s: src/Queue.cpp.s
 
-.PHONY : src/GenericController.s
+.PHONY : src/Queue.s
 
 # target to generate assembly for a file
-src/GenericController.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/GenericController.cpp.s
-.PHONY : src/GenericController.cpp.s
+src/Queue.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Queue.cpp.s
+.PHONY : src/Queue.cpp.s
 
-src/KeyboardListener.o: src/KeyboardListener.cpp.o
+src/controller/Controller44.o: src/controller/Controller44.cpp.o
 
-.PHONY : src/KeyboardListener.o
+.PHONY : src/controller/Controller44.o
 
 # target to build an object file
-src/KeyboardListener.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.o
-.PHONY : src/KeyboardListener.cpp.o
+src/controller/Controller44.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o
+.PHONY : src/controller/Controller44.cpp.o
 
-src/KeyboardListener.i: src/KeyboardListener.cpp.i
+src/controller/Controller44.i: src/controller/Controller44.cpp.i
 
-.PHONY : src/KeyboardListener.i
+.PHONY : src/controller/Controller44.i
 
 # target to preprocess a source file
-src/KeyboardListener.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.i
-.PHONY : src/KeyboardListener.cpp.i
+src/controller/Controller44.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.i
+.PHONY : src/controller/Controller44.cpp.i
 
-src/KeyboardListener.s: src/KeyboardListener.cpp.s
+src/controller/Controller44.s: src/controller/Controller44.cpp.s
 
-.PHONY : src/KeyboardListener.s
+.PHONY : src/controller/Controller44.s
 
 # target to generate assembly for a file
-src/KeyboardListener.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/KeyboardListener.cpp.s
-.PHONY : src/KeyboardListener.cpp.s
+src/controller/Controller44.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.s
+.PHONY : src/controller/Controller44.cpp.s
 
-src/LircWrapper.o: src/LircWrapper.cpp.o
+src/controller/GenericController.o: src/controller/GenericController.cpp.o
 
-.PHONY : src/LircWrapper.o
+.PHONY : src/controller/GenericController.o
 
 # target to build an object file
-src/LircWrapper.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.o
-.PHONY : src/LircWrapper.cpp.o
+src/controller/GenericController.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o
+.PHONY : src/controller/GenericController.cpp.o
 
-src/LircWrapper.i: src/LircWrapper.cpp.i
+src/controller/GenericController.i: src/controller/GenericController.cpp.i
 
-.PHONY : src/LircWrapper.i
+.PHONY : src/controller/GenericController.i
 
 # target to preprocess a source file
-src/LircWrapper.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.i
-.PHONY : src/LircWrapper.cpp.i
+src/controller/GenericController.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.i
+.PHONY : src/controller/GenericController.cpp.i
 
-src/LircWrapper.s: src/LircWrapper.cpp.s
+src/controller/GenericController.s: src/controller/GenericController.cpp.s
 
-.PHONY : src/LircWrapper.s
+.PHONY : src/controller/GenericController.s
 
 # target to generate assembly for a file
-src/LircWrapper.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/LircWrapper.cpp.s
-.PHONY : src/LircWrapper.cpp.s
+src/controller/GenericController.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.s
+.PHONY : src/controller/GenericController.cpp.s
 
-src/Remote44Key.o: src/Remote44Key.cpp.o
+src/controller/LircWrapper.o: src/controller/LircWrapper.cpp.o
 
-.PHONY : src/Remote44Key.o
+.PHONY : src/controller/LircWrapper.o
 
 # target to build an object file
-src/Remote44Key.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.o
-.PHONY : src/Remote44Key.cpp.o
+src/controller/LircWrapper.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o
+.PHONY : src/controller/LircWrapper.cpp.o
 
-src/Remote44Key.i: src/Remote44Key.cpp.i
+src/controller/LircWrapper.i: src/controller/LircWrapper.cpp.i
 
-.PHONY : src/Remote44Key.i
+.PHONY : src/controller/LircWrapper.i
 
 # target to preprocess a source file
-src/Remote44Key.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.i
-.PHONY : src/Remote44Key.cpp.i
+src/controller/LircWrapper.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.i
+.PHONY : src/controller/LircWrapper.cpp.i
 
-src/Remote44Key.s: src/Remote44Key.cpp.s
+src/controller/LircWrapper.s: src/controller/LircWrapper.cpp.s
 
-.PHONY : src/Remote44Key.s
+.PHONY : src/controller/LircWrapper.s
 
 # target to generate assembly for a file
-src/Remote44Key.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Remote44Key.cpp.s
-.PHONY : src/Remote44Key.cpp.s
+src/controller/LircWrapper.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.s
+.PHONY : src/controller/LircWrapper.cpp.s
 
-src/VirtualController.o: src/VirtualController.cpp.o
+src/controller/Remote44.o: src/controller/Remote44.cpp.o
 
-.PHONY : src/VirtualController.o
+.PHONY : src/controller/Remote44.o
 
 # target to build an object file
-src/VirtualController.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/VirtualController.cpp.o
-.PHONY : src/VirtualController.cpp.o
+src/controller/Remote44.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o
+.PHONY : src/controller/Remote44.cpp.o
 
-src/VirtualController.i: src/VirtualController.cpp.i
+src/controller/Remote44.i: src/controller/Remote44.cpp.i
 
-.PHONY : src/VirtualController.i
+.PHONY : src/controller/Remote44.i
 
 # target to preprocess a source file
-src/VirtualController.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/VirtualController.cpp.i
-.PHONY : src/VirtualController.cpp.i
+src/controller/Remote44.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.i
+.PHONY : src/controller/Remote44.cpp.i
 
-src/VirtualController.s: src/VirtualController.cpp.s
+src/controller/Remote44.s: src/controller/Remote44.cpp.s
 
-.PHONY : src/VirtualController.s
+.PHONY : src/controller/Remote44.s
 
 # target to generate assembly for a file
-src/VirtualController.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/VirtualController.cpp.s
-.PHONY : src/VirtualController.cpp.s
+src/controller/Remote44.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.s
+.PHONY : src/controller/Remote44.cpp.s
+
+src/emulator/ColourDisplay.o: src/emulator/ColourDisplay.cpp.o
+
+.PHONY : src/emulator/ColourDisplay.o
+
+# target to build an object file
+src/emulator/ColourDisplay.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o
+.PHONY : src/emulator/ColourDisplay.cpp.o
+
+src/emulator/ColourDisplay.i: src/emulator/ColourDisplay.cpp.i
+
+.PHONY : src/emulator/ColourDisplay.i
+
+# target to preprocess a source file
+src/emulator/ColourDisplay.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.i
+.PHONY : src/emulator/ColourDisplay.cpp.i
+
+src/emulator/ColourDisplay.s: src/emulator/ColourDisplay.cpp.s
+
+.PHONY : src/emulator/ColourDisplay.s
+
+# target to generate assembly for a file
+src/emulator/ColourDisplay.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.s
+.PHONY : src/emulator/ColourDisplay.cpp.s
+
+src/emulator/KeyboardListener.o: src/emulator/KeyboardListener.cpp.o
+
+.PHONY : src/emulator/KeyboardListener.o
+
+# target to build an object file
+src/emulator/KeyboardListener.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o
+.PHONY : src/emulator/KeyboardListener.cpp.o
+
+src/emulator/KeyboardListener.i: src/emulator/KeyboardListener.cpp.i
+
+.PHONY : src/emulator/KeyboardListener.i
+
+# target to preprocess a source file
+src/emulator/KeyboardListener.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.i
+.PHONY : src/emulator/KeyboardListener.cpp.i
+
+src/emulator/KeyboardListener.s: src/emulator/KeyboardListener.cpp.s
+
+.PHONY : src/emulator/KeyboardListener.s
+
+# target to generate assembly for a file
+src/emulator/KeyboardListener.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.s
+.PHONY : src/emulator/KeyboardListener.cpp.s
+
+src/emulator/VirtualController.o: src/emulator/VirtualController.cpp.o
+
+.PHONY : src/emulator/VirtualController.o
+
+# target to build an object file
+src/emulator/VirtualController.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o
+.PHONY : src/emulator/VirtualController.cpp.o
+
+src/emulator/VirtualController.i: src/emulator/VirtualController.cpp.i
+
+.PHONY : src/emulator/VirtualController.i
+
+# target to preprocess a source file
+src/emulator/VirtualController.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.i
+.PHONY : src/emulator/VirtualController.cpp.i
+
+src/emulator/VirtualController.s: src/emulator/VirtualController.cpp.s
+
+.PHONY : src/emulator/VirtualController.s
+
+# target to generate assembly for a file
+src/emulator/VirtualController.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.s
+.PHONY : src/emulator/VirtualController.cpp.s
 
 test/main.o: test/main.cpp.o
 
@@ -419,27 +473,33 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/ColourDisplay.o"
-	@echo "... src/ColourDisplay.i"
-	@echo "... src/ColourDisplay.s"
-	@echo "... src/Controller44KeyState.o"
-	@echo "... src/Controller44KeyState.i"
-	@echo "... src/Controller44KeyState.s"
-	@echo "... src/GenericController.o"
-	@echo "... src/GenericController.i"
-	@echo "... src/GenericController.s"
-	@echo "... src/KeyboardListener.o"
-	@echo "... src/KeyboardListener.i"
-	@echo "... src/KeyboardListener.s"
-	@echo "... src/LircWrapper.o"
-	@echo "... src/LircWrapper.i"
-	@echo "... src/LircWrapper.s"
-	@echo "... src/Remote44Key.o"
-	@echo "... src/Remote44Key.i"
-	@echo "... src/Remote44Key.s"
-	@echo "... src/VirtualController.o"
-	@echo "... src/VirtualController.i"
-	@echo "... src/VirtualController.s"
+	@echo "... src/Colour.o"
+	@echo "... src/Colour.i"
+	@echo "... src/Colour.s"
+	@echo "... src/Queue.o"
+	@echo "... src/Queue.i"
+	@echo "... src/Queue.s"
+	@echo "... src/controller/Controller44.o"
+	@echo "... src/controller/Controller44.i"
+	@echo "... src/controller/Controller44.s"
+	@echo "... src/controller/GenericController.o"
+	@echo "... src/controller/GenericController.i"
+	@echo "... src/controller/GenericController.s"
+	@echo "... src/controller/LircWrapper.o"
+	@echo "... src/controller/LircWrapper.i"
+	@echo "... src/controller/LircWrapper.s"
+	@echo "... src/controller/Remote44.o"
+	@echo "... src/controller/Remote44.i"
+	@echo "... src/controller/Remote44.s"
+	@echo "... src/emulator/ColourDisplay.o"
+	@echo "... src/emulator/ColourDisplay.i"
+	@echo "... src/emulator/ColourDisplay.s"
+	@echo "... src/emulator/KeyboardListener.o"
+	@echo "... src/emulator/KeyboardListener.i"
+	@echo "... src/emulator/KeyboardListener.s"
+	@echo "... src/emulator/VirtualController.o"
+	@echo "... src/emulator/VirtualController.i"
+	@echo "... src/emulator/VirtualController.s"
 	@echo "... test/main.o"
 	@echo "... test/main.i"
 	@echo "... test/main.s"

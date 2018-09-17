@@ -1,12 +1,11 @@
 #ifndef RGB_ME_VIRTUALCONTROLLER_H
 #define RGB_ME_VIRTUALCONTROLLER_H
 
-#include "Rgb44.h"
-#include "Remote44Key.h"
-#include "Controller44KeyState.h"
+#include "../controller/Remote44.h"
+#include "../controller/Controller44.h"
 #include "KeyboardListener.h"
 #include "ColourDisplay.h"
-#include "GenericController.h"
+#include "../controller/GenericController.h"
 #include <memory>
 #include <map>
 #include <string>
@@ -14,15 +13,14 @@
 class GenericController;
 class KeyboardListener;
 
-class VirtualController: public Controller44KeyState {
+class VirtualController: public Controller44 {
 public:
     VirtualController();
     void initialise(std::shared_ptr<GenericController>);
     void receiveRemoteCommand(Button);
 
 private:
-    const colour BLACK = Colour(0, 0, 0);
-    void ncursesSetup();
+    const Colour BLACK = Colour(0, 0, 0);
     std::shared_ptr<ColourDisplay> colourDisplay;
     std::shared_ptr<KeyboardListener> keyboardListener;
     std::shared_ptr<GenericController> genericController;

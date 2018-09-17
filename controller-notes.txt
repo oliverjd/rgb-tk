@@ -29,7 +29,7 @@ generic remote functions (which should more or less correspond directly to butto
 - diy b up
 - diy b down
 
-a level below this in Remote44Key should basically have every single button on the remote, all 44 of them. then generic remote should do something to reduce this number
+a level below this in Remote44 should basically have every single button on the remote, all 44 of them. then generic remote should do something to reduce this number
 
 separate persistent states of the the controller:
 
@@ -64,7 +64,7 @@ mode: steady/flash/fade3/fade7/jump3/jump7 (which persists through power on/off)
 
 
 
-classes: Remote44Key extends GenericRemote to actually include the buttons - always call genericremote as an *Interface* instead of the specific type of remote, to allow changing remote later. look up how to use interfaces in c++
+classes: Remote44 extends GenericRemote to actually include the buttons - always call genericremote as an *Interface* instead of the specific type of remote, to allow changing remote later. look up how to use interfaces in c++
 
 todo: implement a mock of this controller/remote so i can do everything in software!
 
@@ -84,9 +84,19 @@ Functions to implement:
 
 brightness: only if currentMode is mode_preset
 
+flow of objects:
+
+KeyboardListener.keyPressed -> GenericController.newFunction
+-> remote44->sendButtonPress(buttonCode) -> virtualController->receiveRemoteCommand
+-> calculateCurrentColour -> done
+
+
+TODO:
+
 1. move emulator stuff to its own folder
 2. move the junk from rgb44.h into controller44keystate and rename it to controller44key
 3. thread out the 'gui' (emulator)
+4. write some tests
 
 then:
 - implement moving stuff

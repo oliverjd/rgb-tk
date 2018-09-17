@@ -1,37 +1,20 @@
 #include "VirtualController.h"
 #include "KeyboardListener.h"
-#include "Controller44KeyState.h"
-#include "Remote44Key.h"
+#include "../controller/Controller44.h"
+#include "../controller/Remote44.h"
+#include "../Colour.h"
 #include <ncurses.h>
 #include <iostream>
 #include <cmath>
 
-VirtualController::VirtualController() = default;
-
-void VirtualController::initialise(std::shared_ptr<GenericController> gc) {
-    brightnessFraction = 1;
+VirtualController::VirtualController() : brightnessFraction(1), colourDisplay(std::make_shared<ColourDisplay>()) {
     currentMode = mode_preset;
     presetTransient = button_red0;
-    genericController = gc;
-
-    keyboardListener = std::make_shared<KeyboardListener>(gc);
-    colourDisplay = std::make_shared<ColourDisplay>();
-
-    ncursesSetup();
-
-    colourDisplay->initColourDisplay();
-    keyboardListener->listenForKeypress();
 }
 
-void VirtualController::ncursesSetup() {
-    initscr();
-    clear();
-    noecho();
-    cbreak();
-    start_color();
-    keypad(stdscr, true);
-    curs_set(0);
-    scrollok(stdscr,TRUE);
+void VirtualController::initialise(std::shared_ptr<GenericController> gc) {
+    genericController = gc;
+    keyboardListener = std::make_shared<KeyboardListener>(genericController);
 }
 
 void VirtualController::receiveRemoteCommand(Button buttonCode) {
@@ -45,7 +28,6 @@ void VirtualController::receiveRemoteCommand(Button buttonCode) {
         currentMode = mode_diy;
         diySelectTransient = buttonCode;
     }
-
 
     if (currentMode == mode_diy) {
         printw("Changing DIY colour.\n");
@@ -126,10 +108,7 @@ Colour VirtualController::calculatePresetColour() {
     return colour;
 }
 
-
 void VirtualController::setColour(Colour col) {
     printw("Set colour\n");
     colourDisplay->updateDisplayedColour(col.red, col.green, col.blue);
 }
-
-

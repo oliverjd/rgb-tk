@@ -133,49 +133,58 @@
 		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/main.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/ColourDisplay.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/ColourDisplay.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Controller44KeyState.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Queue.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Controller44KeyState.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Queue.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/GenericController.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/GenericController.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/KeyboardListener.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/KeyboardListener.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/LircWrapper.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/LircWrapper.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Remote44Key.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Remote44Key.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/Rgb44.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.cpp">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/VirtualController.cpp">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.h">
 			<Option target="rgb_me"/>
 		</Unit>
-		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/VirtualController.h">
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.cpp">
+			<Option target="rgb_me"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.h">
+			<Option target="rgb_me"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.cpp">
+			<Option target="rgb_me"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.h">
 			<Option target="rgb_me"/>
 		</Unit>
 		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-me/test/main.cpp">

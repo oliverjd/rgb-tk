@@ -1,9 +1,9 @@
 #include "KeyboardListener.h"
-#include "Rgb44.h"
 #include <ncurses.h>
 
 KeyboardListener::KeyboardListener(std::shared_ptr<GenericController> genericController) :
         genericController(genericController) {
+    listenForKeypress();
 }
 
 void KeyboardListener::listenForKeypress() {
