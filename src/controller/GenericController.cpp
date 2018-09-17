@@ -1,8 +1,8 @@
 #include "GenericController.h"
 #include "../emulator/VirtualController.h"
 
-GenericController::GenericController(std::shared_ptr<VirtualController> virtualController) {
-    remote44 = std::make_shared<Remote44>(virtualController);
+GenericController::GenericController(VirtualController* virtualController) {
+    remote44 = std::make_unique<Remote44>(virtualController);
 };
 
 void GenericController::togglePower() {

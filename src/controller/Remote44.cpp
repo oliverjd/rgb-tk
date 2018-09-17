@@ -5,8 +5,8 @@
 #include <iostream>
 #include "Controller44.h"
 
-Remote44::Remote44(std::shared_ptr<VirtualController> virtualController) :
-        virtualController(virtualController), lircWrapper(std::make_shared<LircWrapper>()) {
+Remote44::Remote44(VirtualController* virtualController) :
+        virtualController(virtualController), lircWrapper(std::make_unique<LircWrapper>()) {
 }
 
 void Remote44::sendButtonPress(Button button, int n) {

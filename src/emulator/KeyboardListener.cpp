@@ -1,7 +1,7 @@
 #include "KeyboardListener.h"
 #include <ncurses.h>
 
-KeyboardListener::KeyboardListener(std::shared_ptr<GenericController> genericController) :
+KeyboardListener::KeyboardListener(GenericController* genericController) :
         genericController(genericController) {
     listenForKeypress();
 }

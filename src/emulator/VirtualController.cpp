@@ -6,15 +6,16 @@
 #include <ncurses.h>
 #include <iostream>
 #include <cmath>
+#include <thread>
 
-VirtualController::VirtualController() : brightnessFraction(1), colourDisplay(std::make_shared<ColourDisplay>()) {
+VirtualController::VirtualController() : brightnessFraction(1), colourDisplay(std::make_unique<ColourDisplay>()) {
     currentMode = mode_preset;
     presetTransient = button_red0;
 }
 
-void VirtualController::initialise(std::shared_ptr<GenericController> gc) {
+void VirtualController::setupKeyboardListener(GenericController *gc) {
     genericController = gc;
-    keyboardListener = std::make_shared<KeyboardListener>(genericController);
+    keyboardListener = std::make_unique<KeyboardListener>(genericController);
 }
 
 void VirtualController::receiveRemoteCommand(Button buttonCode) {

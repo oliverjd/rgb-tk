@@ -7,12 +7,12 @@
 #include <thread>
 
 int main() {
-    std::shared_ptr<VirtualController> virtualController;
-    std::shared_ptr<GenericController> controller;
+    std::unique_ptr<VirtualController> virtualController;
+    std::unique_ptr<GenericController> controller;
 
-    virtualController = std::make_shared<VirtualController>();
-    controller = std::make_shared<GenericController>(virtualController);
-    virtualController->initialise(controller);
+    virtualController = std::make_unique<VirtualController>();
+    controller = std::make_unique<GenericController>(virtualController.get());
+    virtualController->setupKeyboardListener(controller.get());
 
     return 0;
 }

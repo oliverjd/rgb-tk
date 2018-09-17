@@ -16,14 +16,14 @@ class KeyboardListener;
 class VirtualController: public Controller44 {
 public:
     VirtualController();
-    void initialise(std::shared_ptr<GenericController>);
+    void setupKeyboardListener(GenericController *);
     void receiveRemoteCommand(Button);
 
 private:
     const Colour BLACK = Colour(0, 0, 0);
-    std::shared_ptr<ColourDisplay> colourDisplay;
-    std::shared_ptr<KeyboardListener> keyboardListener;
-    std::shared_ptr<GenericController> genericController;
+    std::unique_ptr<ColourDisplay> colourDisplay;
+    std::unique_ptr<KeyboardListener> keyboardListener;
+    GenericController* genericController;
     Colour calculateCurrentColour();
     void setColour(Colour);
     void changeDiyColour(Button);

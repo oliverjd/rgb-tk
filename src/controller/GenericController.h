@@ -12,7 +12,7 @@ class Remote44;
 
 class GenericController: public Controller44 {
 public:
-    GenericController(std::shared_ptr<VirtualController>);
+    GenericController(VirtualController*);
 
     void togglePower();
     void turnPowerOn();
@@ -23,7 +23,7 @@ public:
     void changeBrightness(bool increase);
 
 private:
-    std::shared_ptr<Remote44> remote44;
+    std::unique_ptr<Remote44> remote44;
 
 };
 

@@ -56,12 +56,6 @@ Controller44.h
 Remote44.h
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.h
 
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.cpp
-LircWrapper.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.h
-lirc_client.h
--
-
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.h
 string
 -
@@ -124,6 +118,8 @@ ncurses.h
 iostream
 -
 cmath
+-
+thread
 -
 
 /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.h

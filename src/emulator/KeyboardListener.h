@@ -10,7 +10,7 @@ class GenericController;
 
 class KeyboardListener {
 public:
-    KeyboardListener(std::shared_ptr<GenericController>);
+    KeyboardListener(GenericController*);
 private:
     void listenForKeypress();
 
@@ -34,7 +34,7 @@ private:
     void presetChoice(int);
     void diyChoice(int);
     void diyModifyMode(int);
-    std::shared_ptr<GenericController> genericController;
+    GenericController* genericController;
     
 };
 
