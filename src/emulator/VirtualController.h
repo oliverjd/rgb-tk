@@ -6,9 +6,10 @@
 #include "KeyboardListener.h"
 #include "ColourDisplay.h"
 #include "../controller/GenericController.h"
-#include <memory>
 #include <map>
 #include <string>
+#include <thread>
+#include <atomic>
 
 class GenericController;
 class KeyboardListener;
@@ -18,6 +19,7 @@ public:
     VirtualController();
     void setupKeyboardListener(GenericController *);
     void receiveRemoteCommand(Button);
+    bool alive();
 
 private:
     const Colour BLACK = Colour(0, 0, 0);
@@ -30,6 +32,9 @@ private:
     void changePresetBrightness(Button);
     Colour calculatePresetColour();
     double brightnessFraction;
+    void makeKeyboardListenerThread();
+    std::thread keyboardListenerThread;
+    std::atomic<bool> keyboardThreadAlive;
 };
 
 

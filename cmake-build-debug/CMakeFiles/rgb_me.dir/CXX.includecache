@@ -6,29 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ojd/Documents/Projects/cpp/rgb-me/main.cpp
-iostream
--
-memory
--
-csignal
--
-src/controller/GenericController.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.h
-src/emulator/VirtualController.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.h
-thread
--
-
 /home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.h
-
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.cpp
-Controller44.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.h
-Remote44.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.h
-map
--
 
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.h
 vector
@@ -40,12 +18,6 @@ string
 ../Colour.h
 /home/ojd/Documents/Projects/cpp/rgb-me/src/Colour.h
 
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.cpp
-GenericController.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.h
-../emulator/VirtualController.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.h
-
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.h
 memory
 -
@@ -59,20 +31,6 @@ Remote44.h
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.h
 string
 -
-
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.cpp
-Remote44.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.h
-LircWrapper.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/LircWrapper.h
-string
--
-thread
--
-iostream
--
-Controller44.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.h
 
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Remote44.h
 LircWrapper.h
@@ -87,12 +45,6 @@ Controller44.h
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/Controller44.h
 
 /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.h
-
-/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.cpp
-KeyboardListener.h
-/home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.h
-ncurses.h
--
 
 /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/KeyboardListener.h
 ncurses.h
@@ -119,8 +71,6 @@ iostream
 -
 cmath
 -
-thread
--
 
 /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/VirtualController.h
 ../controller/Remote44.h
@@ -133,10 +83,12 @@ ColourDisplay.h
 /home/ojd/Documents/Projects/cpp/rgb-me/src/emulator/ColourDisplay.h
 ../controller/GenericController.h
 /home/ojd/Documents/Projects/cpp/rgb-me/src/controller/GenericController.h
-memory
--
 map
 -
 string
+-
+thread
+-
+atomic
 -
 

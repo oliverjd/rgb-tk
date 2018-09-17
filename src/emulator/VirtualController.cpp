@@ -6,7 +6,6 @@
 #include <ncurses.h>
 #include <iostream>
 #include <cmath>
-#include <thread>
 
 VirtualController::VirtualController() : brightnessFraction(1), colourDisplay(std::make_unique<ColourDisplay>()) {
     currentMode = mode_preset;
@@ -15,7 +14,18 @@ VirtualController::VirtualController() : brightnessFraction(1), colourDisplay(st
 
 void VirtualController::setupKeyboardListener(GenericController *gc) {
     genericController = gc;
+    keyboardListenerThread = std::thread(&VirtualController::makeKeyboardListenerThread, this);
+    keyboardThreadAlive = true;
+    keyboardListenerThread.detach();
+}
+
+void VirtualController::makeKeyboardListenerThread() {
     keyboardListener = std::make_unique<KeyboardListener>(genericController);
+    keyboardThreadAlive = false;
+}
+
+bool VirtualController::alive() {
+    return keyboardThreadAlive;
 }
 
 void VirtualController::receiveRemoteCommand(Button buttonCode) {
