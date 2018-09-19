@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/lirc/include -I/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/ncurses/include -I/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/simple-web-server/include -I/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/boost/include 
 

@@ -21,10 +21,17 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CMakeLanguageInformation.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CheckIncludeFile.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CheckLibraryExists.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/CheckSymbolExists.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Compiler/GNU-C.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Compiler/GNU-CXX.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Compiler/GNU.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/FindBoost.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/FindPackageHandleStandardArgs.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/FindPackageMessage.cmake"
+  "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/FindThreads.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Platform/Linux-GNU-C.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Platform/Linux-GNU-CXX.cmake"
   "/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/share/cmake-3.12/Modules/Platform/Linux-GNU.cmake"
@@ -47,5 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tests.dir/DependInfo.cmake"
-  "CMakeFiles/rgb_me.dir/DependInfo.cmake"
+  "CMakeFiles/rgbtk.dir/DependInfo.cmake"
   )

@@ -2,31 +2,620 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="rgb_me" targetName="tests" />
-      <config projectName="rgb_me" targetName="rgb_me" />
+      <config projectName="rgbtk" targetName="tests" />
+      <config projectName="rgbtk" targetName="rgbtk" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="ArmRelease" CONFIG_NAME="Release" TOOLCHAIN_NAME="Arm" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d459302-386b-4f50-9b0e-725e037c80cb" name="Default" comment="">
+    <list default="true" id="0d459302-386b-4f50-9b0e-725e037c80cb" name="Default" comment="- fully working ifttt support via simple-web-server&#10;- builds and runs on both x86 and arm (raspberry pi 2) with working LIRC support as well as virtual">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/BeatMatch.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/BeatMatch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/GenericRoutine.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/GenericRoutine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/Ifttt.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/Ifttt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/SunriseSunset.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routines/SunriseSunset.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rgb-me.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rgb-me.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/link.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/Colour.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/Queue.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/rgb_me" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/rgb_me" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rgb_me.dir/test/tests.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/test/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tests.dir/test/tests.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/rgb_me" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/rgb_me.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/controller-notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/CONTRIBUTE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/COPYING.ciniparser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/COPYING.curl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/NEWS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/README.conf.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/VERSION.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/aclocal.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/autogen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/compile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/config.guess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/config.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/config.sub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/accent.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/act200l.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/act220l.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/adaptec.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/alsa_usb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/animax.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/arduino.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/asusdh.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/ati-remote-wonder.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/atilibusb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/atiusb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/atwf83.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/audio.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/audio_alsa.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/avermedia.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/avermedia98.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/avermedia_vdomate.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/awlibusb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/breakoutbox.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/bte.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/chronos.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/commandir.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/cph03x_askey.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/cph03x_dynalink.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/cph03x_trifan.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/cph06x_askey.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/cph06x_phoebe.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/cph06x_tview.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/creative.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/creative_infracd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/default.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/devinput.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/dfclibusb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/dsp.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/dvico.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/ea65.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/flyvideo_2.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/flyvideo_98.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/flyvideo_98FM.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/flyvideo_FM_card36.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/ftdi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/gvbctv5pci.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/hauppauge.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/hauppauge_dvb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/hauppauge_hvr1300.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/hercules_smarttv_stereo.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/home_brew_parallel.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/home_brew_serial.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/igorplugusb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/imon.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/imon_24g.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/imon_knob.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/imon_lcd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/imon_pad.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/imon_rsc.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/irdeo.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/irdeo_remote.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/irlink.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/irtoy.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/kernel-drivers.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/knc_one.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/knc_one_typhoon.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/kworld.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/leadtek_0007.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/leadtek_0010.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/leadtek_pvr2000.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/livedrive_midi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/livedrive_seq.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/logitech.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/macmini.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mce.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mediafocusI.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/medion.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mouseremote.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mp3-anywhere-usb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mp3anywhere-serial.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mplay_blast.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/mplay_mini.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/none.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/nslu2.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/nvidia-x10.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/packard_bell.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pcmak.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pcmak_usb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pctv.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pctv_miro.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pctv_pro.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pctv_sat.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pixelview_bt878.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pixelview_mpeg2.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pixelview_pak.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pixelview_pak_lenco.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pixelview_pro_37.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/pixelview_pv.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/provideo.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/realmagic.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/remotemaster.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/remotes.list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sa1100_hp.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sa1100_sharp.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/samsung.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sasem.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sasem_dign.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/silitek.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sir.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/snapstream.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sonyir-osx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/sonyir.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/srm7500libusb.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/tekram.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/tekram_bt829.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/tira.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/tira_raw.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/ttusbir.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/tvbox.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/udp.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/uirt2.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/uirt2_raw.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/usb_uirt_raw.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/usbx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/x10.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configs/zotac.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/configure.ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/60-lirc.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/60-usb-generic-perms.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/61-lirc.blacklist-all.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/97-lircd-uinput.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/98-lirc-stable-link.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/99-remote-control-lirc.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/irexec.desktop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/irman2lirc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircmd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/lircmap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/mplayer.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/mythtv.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/vlc.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/volume_alsa.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/volume_mythtv.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/lircrc/volume_pulse.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/contrib/release-process.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/daemons/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/daemons/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/daemons/lircd-uinput.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/daemons/lircd.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/daemons/lircmd.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/daemons/lircrcd.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/depcomp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/api-docs.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/data2hwdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/data2table" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/docpage.xsl.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/doxypypy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/driver-toc.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/empty_index.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/fix-urls.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/api-general.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/configuration-guide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/configure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/driver-api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/empty_toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/lirc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/lirc_client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/no-api-docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/programs-overview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/programs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/pronto2lirc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/html-source/technical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/index.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/irxevent.keys" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/PCB.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/audio-alsa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/cir.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/cvs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/developers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/git.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/IR-mouse1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/IR-mouse2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/atwf83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/audio_transmitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/audio_wave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/banner_en_1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/better_transmitter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/diode.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/improved_transmitter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/ir-audio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/irrcv_board.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/lirc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/lirc1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/lirc2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/lirc3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/lirclogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/marb18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/schematics.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/screenshot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/screenshot1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/simple_transmitter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/top3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/images/tsop173x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/improved_transmitter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/ir-audio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/irda.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/lirc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/mirrors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/parallel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/pictures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/pictures1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/pictures2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/pinout_TRM1038.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/receivers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/software.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/transmitters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/lirc.org/tv_cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/make-driver-toc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/make-ext-driver-toc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/make_rel_symlink.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/ircat.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irdb-get.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irexec.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irpipe.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irpty.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irrecord.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irsend.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irsimreceive.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irsimsend.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irtestcase.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irtext2udp.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irw.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/irxevent.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lirc-config-tool.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lirc-lsplugins.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lirc-lsremotes.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lirc-make-devinput.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lirc-setup.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircd-setup.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircd-uinput.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircd.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircd.conf.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircmd.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircrc.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/lircrcd.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/mode2.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/pronto2lirc.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/man-source/xmode2.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/manpage.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/page.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/alsa-usb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/atilibusb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/atwf83.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/audio-alsa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/audio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/devinput.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/ftdi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/ftdix.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/girs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/imon-24g.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/imon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/irtoy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/srm7500atilibusb.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/tira.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugindocs/udp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/plugpage.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/doc/py_filter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/drivers/irpipe/irpipe.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/include/linux/input-event-codes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/include/media/lirc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/install-sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/irexec.lircrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/ciniparser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/ciniparser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/config_file.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/config_file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/config_flags.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/curl_poll.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/curl_poll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/dictionary.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/dictionary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/driver.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/driver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/driver_api.dox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/driver_api.doxhead" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/drv_admin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/drv_admin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/drv_enum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/drv_enum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/dump_config.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/dump_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/input_map.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/input_map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/input_map.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/ir_remote.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/ir_remote.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/ir_remote_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/irrecord.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/irrecord.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/line_buffer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/line_buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc-utils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc-utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/ciniparser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/config_file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/config_flags.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/curl_poll.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/dictionary.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/driver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/drv_admin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/drv_enum.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/dump_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/input_map.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/ir_remote.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/ir_remote_types.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/irrecord.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/line_buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc-utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc_client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc_driver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc_log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc_options.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/lirc_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/paths.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/receive.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/release.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/serial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc/transmit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_client.dox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_client.doxhead" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_client.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_driver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_log.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_options.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_options.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/lirc_private.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/mainpage.dox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/receive.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/receive.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/release.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/release.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/serial.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/serial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/transmit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lib/transmit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lirc-driver.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lirc-driver.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lirc.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lirc.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lirc_options.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lircd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/lircmd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/ltmain.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/ax_python_module.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/libtool.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/ltoptions.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/ltsugar.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/ltversion.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/lt~obsolete.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/runstatedir.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/m4/systemd.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/missing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/accent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/alsa_usb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/atilibusb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/atwf83.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/audio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/audio_alsa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/awlibusb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/bte.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/commandir.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/creative.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/creative_infracd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/default.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/devinput.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/dfclibusb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/dsp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/ea65.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/file.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/ftdi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/girs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/hiddev.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/i2cuser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/irlink.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/irtoy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/livedrive_common.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/livedrive_common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/livedrive_midi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/livedrive_seq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/logitech.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/make-pluginlist.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/mouseremote.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/mp3anywhere.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/mplay.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/osx_usbraw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/pcmak.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/pinsys.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/pixelview.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/pluginlist.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/silitek.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/srm7500libusb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/tira.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/udp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/uirt2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/uirt2_common.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/uirt2_common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/uirt2_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/usbx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/plugins/zotac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/py-compile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/pylint.mak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/doc/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/doc/diode-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/doc/mainpage.dox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/_client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/async_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/lirctool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/lirctool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/lirc/paths.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/tests/dummy-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/tests/lircrc.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/python-pkg/tests/test_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/irexec.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/lircd-setup.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/lircd-uinput.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/lircd.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/lircd.socket" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/systemd/lircmd.service" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/check_configs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/ircat.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irdb-get" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irexec.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irpipe.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irpty.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irrecord-ui.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irsend.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irsimreceive.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irsimsend.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irtestcase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irtext2udp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irw.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/irxevent.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-config-tool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-init-db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-lsplugins.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-lsremotes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-make-devinput" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/baseview.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/choosers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/lirc-setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/lirc-setup.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/mvc_control.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/mvc_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/mvc_view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lirc-setup/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/lircd-setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/make_rel_symlink.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/mode2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/pronto2lirc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs-unused/lirc/tools/xmode2.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Colour.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Colour.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller44.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller44.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/GenericController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GenericController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/GenericController.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GenericController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LircWrapper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LircWrapper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LircWrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LircWrapper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Remote44.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Remote44.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Remote44.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Remote44.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/emulator/ColourDisplay.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/emulator/ColourDisplay.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/emulator/KeyboardListener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/emulator/KeyboardListener.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/emulator/KeyboardListener.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/emulator/KeyboardListener.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/emulator/VirtualController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/emulator/VirtualController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/emulator/VirtualController.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/emulator/VirtualController.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-arm/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-armrelease/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,35 +627,93 @@
     <session id="-766434868">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="5693" />
-          <entry key="h" value="1286" />
-          <entry key="txt" value="8" />
+          <entry key="cpp" value="6615" />
+          <entry key="h" value="1333" />
+          <entry key="md" value="358" />
+          <entry key="txt" value="259" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="8" />
-          <entry key="ObjectiveC" value="6979" />
+          <entry key="CMakeLists.txt" value="206" />
+          <entry key="ObjectiveC" value="7948" />
+          <entry key="PLAIN_TEXT" value="411" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="49" />
-          <entry key="h" value="52" />
-          <entry key="txt" value="2" />
+          <entry key="c" value="5" />
+          <entry key="cmake" value="4" />
+          <entry key="cpp" value="59" />
+          <entry key="gnome-terminal" value="1" />
+          <entry key="h" value="62" />
+          <entry key="md" value="1" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="101" />
+          <entry key="CMakeLists.txt" value="9" />
+          <entry key="ObjectiveC" value="126" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1287307550">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cc" value="1" />
+          <entry key="conf" value="1" />
+          <entry key="cpp" value="5" />
+          <entry key="h" value="8" />
+          <entry key="hpp" value="4" />
+          <entry key="md" value="1" />
+          <entry key="py" value="1" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="3" />
+          <entry key="ObjectiveC" value="18" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="1131" />
+          <entry key="h" value="148" />
+          <entry key="md" value="351" />
+          <entry key="txt" value="927" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="285" />
+          <entry key="ObjectiveC" value="1279" />
+          <entry key="PLAIN_TEXT" value="993" />
         </counts>
       </usages-collector>
     </session>
@@ -74,12 +721,78 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller-notes.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="142" column="38" lean-forward="true" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routines/Ifttt.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emulator/KeyboardListener.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+            <state relative-caret-position="241">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routines/Ifttt.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
-                <element signature="e#70#90#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/simple-web-server/include/server_http.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/GenericController.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +801,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emulator/KeyboardListener.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="-867">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -98,82 +811,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/GenericController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-              <folding>
-                <element signature="e#72#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/GenericController.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Remote44.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-              <folding>
-                <element signature="e#59#83#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Remote44.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="101" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/emulator/VirtualController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#71#106#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emulator/VirtualController.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -204,11 +845,21 @@
       <find>diychoice</find>
       <find>0, 0</find>
       <find>diymodif</find>
+      <find>arm-none</find>
+      <find>rgb_me</find>
+      <find>RGB_ME</find>
+      <find>rgb-me</find>
+      <find>lirc_init</find>
+      <find>rgb44</find>
+      <find>wtimeou</find>
+      <find>pistache</find>
+      <find>body</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
       <replace>char</replace>
       <replace>,</replace>
+      <replace>RGBTK</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -217,10 +868,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/tests.cpp" />
-        <option value="$PROJECT_DIR$/src/aclass.h" />
-        <option value="$PROJECT_DIR$/src/aclass.cpp" />
-        <option value="$PROJECT_DIR$/test/main.cpp" />
         <option value="$PROJECT_DIR$/test/tests.cpp" />
         <option value="$PROJECT_DIR$/src/LedInterface.cpp" />
         <option value="$PROJECT_DIR$/src/GenericRemote.h" />
@@ -250,22 +897,28 @@
         <option value="$PROJECT_DIR$/src/Controller44.h" />
         <option value="$PROJECT_DIR$/src/Remote44Key.h" />
         <option value="$PROJECT_DIR$/src/Remote44.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/Queue.cpp" />
         <option value="$PROJECT_DIR$/src/Queue.h" />
         <option value="$PROJECT_DIR$/src/GenericController.h" />
         <option value="$PROJECT_DIR$/src/GenericController.cpp" />
         <option value="$PROJECT_DIR$/src/ColourDisplay.h" />
         <option value="$PROJECT_DIR$/src/ColourDisplay.cpp" />
-        <option value="$PROJECT_DIR$/src/emulator/KeyboardListener.h" />
+        <option value="$PROJECT_DIR$/src/emulator/VirtualController.h" />
+        <option value="$PROJECT_DIR$/arm-gcc-toolchain.cmake" />
+        <option value="$PROJECT_DIR$/src/controller/Remote44.cpp" />
+        <option value="$PROJECT_DIR$/src/controller/Remote44.h" />
+        <option value="$PROJECT_DIR$/src/controller/LircWrapper.cpp" />
+        <option value="$PROJECT_DIR$/src/emulator/VirtualController.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/emulator/KeyboardListener.cpp" />
         <option value="$PROJECT_DIR$/src/controller/GenericController.h" />
-        <option value="$PROJECT_DIR$/src/controller/GenericController.cpp" />
-        <option value="$PROJECT_DIR$/src/controller/Remote44.h" />
-        <option value="$PROJECT_DIR$/src/controller/Remote44.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/src/emulator/VirtualController.h" />
-        <option value="$PROJECT_DIR$/src/emulator/VirtualController.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/controller-notes.txt" />
+        <option value="$PROJECT_DIR$/src/routines/Ifttt.cpp" />
+        <option value="$PROJECT_DIR$/src/routines/Ifttt.h" />
+        <option value="$PROJECT_DIR$/src/emulator/KeyboardListener.h" />
+        <option value="$PROJECT_DIR$/src/controller/GenericController.cpp" />
       </list>
     </option>
   </component>
@@ -316,25 +969,31 @@
         <subPane>
           <expand>
             <path>
-              <item name="rgb_me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rgb-me" type="462c0819:PsiDirectoryNode" />
+              <item name="rgbtk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rgbtk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="rgb_me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rgb-me" type="462c0819:PsiDirectoryNode" />
+              <item name="rgbtk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rgbtk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="rgb_me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rgb-me" type="462c0819:PsiDirectoryNode" />
+              <item name="rgbtk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rgbtk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="rgb_me" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rgb-me" type="462c0819:PsiDirectoryNode" />
+              <item name="rgbtk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rgbtk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="emulator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rgbtk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rgbtk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routines" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -345,9 +1004,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/usr/bin/gnome-terminal" />
+    <property name="last_opened_file_path" value="/usr/bin/tilix" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -369,43 +1028,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.rgb_me">
-    <configuration name="All in tests.cpp" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="tests" TEST_PATTERN="[#tests]" TEST_MODE="PATTERN">
+  <component name="RunManager" selected="Application.rgbtk">
+    <configuration name="All in tests.cpp" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgbtk" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgbtk" RUN_TARGET_NAME="tests" TEST_PATTERN="[#tests]" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Another test" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="tests" TEST_CLASS="[42][theAnswer]" TEST_METHOD="Another test" TEST_MODE="SUITE_TEST">
+    <configuration name="Another test" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgbtk" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgbtk" RUN_TARGET_NAME="tests" TEST_CLASS="[42][theAnswer]" TEST_METHOD="Another test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Name of test (1)" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="tests" TEST_CLASS="[blahlbah]" TEST_METHOD="Name of test" TEST_MODE="SUITE_TEST">
+    <configuration name="Name of test (1)" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgbtk" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgbtk" RUN_TARGET_NAME="tests" TEST_CLASS="[blahlbah]" TEST_METHOD="Name of test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Name of test" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="tests" TEST_CLASS="[42][theAnswer]" TEST_METHOD="Name of test" TEST_MODE="SUITE_TEST">
+    <configuration name="Name of test" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgbtk" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgbtk" RUN_TARGET_NAME="tests" TEST_CLASS="[42][theAnswer]" TEST_METHOD="Name of test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="rgb_me" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="rgb_me">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgbtk" TARGET_NAME="rgbtk" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgbtk" RUN_TARGET_NAME="rgbtk">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="rgb_me" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="rgb_me">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="rgb_me" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-- ./rgb_me" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="rgb_me" CONFIG_NAME="Debug" RUN_PATH="/usr/bin/gnome-terminal">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgb_me" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rgb_me" RUN_TARGET_NAME="tests">
+    <configuration name="rgbtk" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./rgbtk" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rgbtk" TARGET_NAME="rgbtk" CONFIG_NAME="Debug" RUN_PATH="/usr/bin/tilix">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -426,14 +1075,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.rgb_me" />
-      <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.tests" />
+      <item itemvalue="Application.rgbtk" />
+      <item itemvalue="Python tests.Unittests in test" />
       <item itemvalue="Catch.Name of test" />
       <item itemvalue="Catch.Another test" />
       <item itemvalue="Catch.All in tests.cpp" />
       <item itemvalue="Catch.Name of test (1)" />
-      <item itemvalue="Python tests.Unittests in test" />
     </list>
     <recent_temporary>
       <list>
@@ -456,6 +1103,14 @@
       <option name="presentableId" value="Default" />
       <updated>1536769687985</updated>
     </task>
+    <task id="LOCAL-00001" summary="working multi-thread although not really safe">
+      <created>1537194533415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537194533415</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -485,21 +1140,21 @@
     <frame x="1280" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="1894" y="127" width="367" height="832" id="Project" order="0" visible="true" weight="0.13287087" />
+      <window_info content_ui="combo" x="1894" y="127" width="367" height="832" id="Project" order="0" visible="true" weight="0.14727855" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.15247108" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21135646" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27970558" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.28916928" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.4994664" visible="true" weight="0.35015774" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053364" side_tool="true" weight="0.23974763" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32991803" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32912722" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.3385744" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -510,61 +1165,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="working multi-thread although not really safe" />
+    <MESSAGE value="- fully working ifttt support via simple-web-server&#10;- builds and runs on both x86 and arm (raspberry pi 2) with working LIRC support as well as virtual" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fully working ifttt support via simple-web-server&#10;- builds and runs on both x86 and arm (raspberry pi 2) with working LIRC support as well as virtual" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/catch.hpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aclass.h" />
-    <entry file="file://$PROJECT_DIR$/src/aclass.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/anotherclass.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/anotherclass.h" />
-    <entry file="file://$PROJECT_DIR$/src/classtest.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/classtest.h" />
-    <entry file="file://$PROJECT_DIR$/src/classtest2.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/classtest2.h" />
-    <entry file="file://$PROJECT_DIR$/controller-notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/tests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GenericRemote.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/GenericRemote.h" />
-    <entry file="file://$PROJECT_DIR$/src/CommandSender.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/CommandSender.h" />
-    <entry file="file://$PROJECT_DIR$/src/CommandSenderVirtual.h" />
-    <entry file="file://$PROJECT_DIR$/src/CommandSenderVirtual.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/CommandSenderPhysical.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/CommandSenderPhysical.h" />
-    <entry file="file://$PROJECT_DIR$/libs/lirc/lib/lirc_client.h" />
-    <entry file="file:///usr/include/curses.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/include/lirc_client.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="411" column="4" selection-start-line="411" selection-start-column="4" selection-end-line="411" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -580,13 +1192,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rgb44.h" />
-    <entry file="file://$PROJECT_DIR$/src/controller/LircWrapper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Colour.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -601,20 +1206,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LircWrapper.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Controller44.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#68#85#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,16 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Controller44.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/emulator/ColourDisplay.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -656,25 +1241,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Data/Documents/Projects/cpp/4f14-coursework-concurrency/doubly-linked-list.cpp">
+    <entry file="file://$PROJECT_DIR$/../4f14-coursework-concurrency/doubly-linked-list.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="270" column="20" selection-start-line="270" selection-start-column="20" selection-end-line="270" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#98#107#0" expanded="true" />
-            <element signature="e#601#610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/GenericController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="e#72#89#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,92 +1252,229 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/GenericController.cpp">
+    <entry file="file://$PROJECT_DIR$/src/routines/BeatMatch.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/BeatMatch.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/c++/7/bits/unique_ptr.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="187" column="14" selection-start-line="187" selection-start-column="14" selection-end-line="187" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-arm/CMakeFiles/3.12.1/CMakeSystem.cmake" />
+    <entry file="file://$PROJECT_DIR$/arm-gcc-toolchain.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-armrelease/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/SunriseSunset.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/SunriseSunset.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/gopt/gopt.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/gopt/gopt.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/gopt/gopt-usage.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/gopt/gopt-errors.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Remote44.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Remote44.h">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LircWrapper.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Controller44.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/bin/gnome-terminal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs-unused/lirc/python-pkg/tests/test_client.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/44-rgb-lirc.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LircWrapper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emulator/VirtualController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/GenericController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/pistache/http.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="489" column="21" selection-start-line="489" selection-start-column="21" selection-end-line="489" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/pistache/examples/hello_server.cc">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding>
-            <element signature="e#59#83#0" expanded="true" />
-          </folding>
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/GenericRoutine.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/GenericRoutine.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/simple-web-server/include/client_http.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/simple-web-server/include/server_http.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="250" column="53" selection-start-line="250" selection-start-column="53" selection-end-line="250" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/boost/include/boost/system/error_code.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6171">
+          <caret line="485" column="41" selection-start-line="485" selection-start-column="41" selection-end-line="485" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emulator/VirtualController.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/emulator/KeyboardListener.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="-867">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller-notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="142" column="38" lean-forward="true" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/Ifttt.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routines/Ifttt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/emulator/KeyboardListener.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-          <folding>
-            <element signature="e#70#90#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="241">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Remote44.cpp">
+    <entry file="file://$PROJECT_DIR$/src/controller/GenericController.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="101" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/emulator/VirtualController.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        <state relative-caret-position="139">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/emulator/VirtualController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#71#106#0" expanded="true" />
           </folding>
         </state>
       </provider>

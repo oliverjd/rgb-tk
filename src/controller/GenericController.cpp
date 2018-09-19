@@ -25,47 +25,42 @@ void GenericController::turnPowerOff() {
 }
 
 void GenericController::switchToPreset(char colour, char number) {
-    Button buttonCodeToSend;
     for (auto const& [key, val] : presets) {
         if (val.presetColour == colour and val.presetNumber == number) {
-            buttonCodeToSend = key;
+            remote44->sendButtonPress(key);
         }
     }
-    remote44->sendButtonPress(buttonCodeToSend);
 }
 
 void GenericController::switchToDiy(char number) {
-    Button buttonCodeToSend;
     for (auto const& [key, val] : diyNumbers) {
         if (val.presetColour == 'd' and val.presetNumber == number) {
-            buttonCodeToSend = key;
+            remote44->sendButtonPress(key);
         }
     }
-    remote44->sendButtonPress(buttonCodeToSend);
+
 }
 
 void GenericController::modifyCurrentDiy(int colour, bool increase) {
-    Button buttonCodeToSend;
     if (colour == 'r') {
         if (increase) {
-            buttonCodeToSend = button_redUp;
+            remote44->sendButtonPress(button_redUp);
         } else {
-            buttonCodeToSend = button_redDown;
+            remote44->sendButtonPress(button_redDown);
         }
     } else if (colour == 'g') {
         if (increase) {
-            buttonCodeToSend = button_greenUp;
+            remote44->sendButtonPress(button_greenUp);
         } else {
-            buttonCodeToSend = button_greenDown;
+            remote44->sendButtonPress(button_greenDown);
         }
     } else if (colour == 'b') {
         if (increase) {
-            buttonCodeToSend = button_blueUp;
+            remote44->sendButtonPress(button_blueUp);
         } else {
-            buttonCodeToSend = button_blueDown;
+            remote44->sendButtonPress(button_blueDown);
         }
     }
-    remote44->sendButtonPress(buttonCodeToSend);
 }
 
 void GenericController::changeBrightness(bool increase) {
@@ -75,5 +70,3 @@ void GenericController::changeBrightness(bool increase) {
         remote44->sendButtonPress(button_brightnessDown);
     }
 }
-
-

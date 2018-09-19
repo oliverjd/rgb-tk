@@ -9,15 +9,8 @@ Remote44::Remote44(VirtualController* virtualController) :
         virtualController(virtualController), lircWrapper(std::make_unique<LircWrapper>()) {
 }
 
-void Remote44::sendButtonPress(Button button, int n) {
-    int millisecondsBetweenButtonPresses = 10;
-    if (virtualController == nullptr) {
-        for (int i = 0; i < n; i++) {
-            lircWrapper->sendOnce(buttonCodes.at(button));
-            std::this_thread::sleep_for(std::chrono::milliseconds(millisecondsBetweenButtonPresses));
-        }
-    } else {
-        // send command to virtual controller
-        virtualController->receiveRemoteCommand(button);
-    }
+void Remote44::sendButtonPress(Button button) {
+    lircWrapper->sendOnce(buttonCodes.at(button));
+    //std::this_thread::sleep_for(std::chrono::milliseconds(millisecondsBetweenButtonPresses));
+    virtualController->receiveRemoteCommand(button);
 }

@@ -29,7 +29,7 @@ bool VirtualController::alive() {
 }
 
 void VirtualController::receiveRemoteCommand(Button buttonCode) {
-    printw("Received\n");
+    printw("Command received by emulator controller.\n");
 
     if (presets.count(buttonCode) > 0) {
         presetTransient = buttonCode;

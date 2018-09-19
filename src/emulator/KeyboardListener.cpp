@@ -9,18 +9,12 @@ KeyboardListener::KeyboardListener(GenericController* genericController) :
 void KeyboardListener::listenForKeypress() {
     int gotKey;
     printw(KEY_WAITING_MESSAGE.c_str());
-    const int ESC_KEY = 27;
-
+    const int QUIT_KEY = 'q';
     while(true) {
         gotKey = getch();
-        if (gotKey == ESC_KEY) {
-            nodelay(stdscr, true);
-            int altModifier = getch();
-            if (altModifier == -1) {
-                endwin();
-                return;
-            }
-            nodelay(stdscr, false);
+        if (gotKey == QUIT_KEY) {
+            endwin();
+            return;
         }
         keyPressed(gotKey);
     }
@@ -98,9 +92,12 @@ void KeyboardListener::diyModifyMode(int c) {
 }
 
 void KeyboardListener::presetChoice(int colour) {
-    printw("Waiting for third key...\n");
-    int number = getch();
-    genericController->switchToPreset(char(colour), char(number));
+    if (colour == 'r' or colour == 'g' or colour == 'b') {
+        printw("Waiting for third key...\n");
+        int num = getch();
+        if (num == '0' or num == '1' or num == '2' or num == '3' or num == '4')
+        genericController->switchToPreset(char(colour), char(num));
+    }
     printw(KEY_WAITING_MESSAGE.c_str());
 }
 

@@ -48,10 +48,10 @@ RM = /home/ojd/packages/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ojd/Documents/Projects/cpp/rgb-me
+CMAKE_SOURCE_DIR = /home/ojd/Data/Documents/Projects/cpp/rgbtk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles /home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ojd/Documents/Projects/cpp/rgb-me/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,17 +124,71 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
-# Target rules for targets named rgb_me
+# Target rules for targets named rgbtk
 
 # Build rule for target.
-rgb_me: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rgb_me
-.PHONY : rgb_me
+rgbtk: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rgbtk
+.PHONY : rgbtk
 
 # fast build rule for target.
-rgb_me/fast:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/build
-.PHONY : rgb_me/fast
+rgbtk/fast:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/build
+.PHONY : rgbtk/fast
+
+libs/gopt/gopt-errors.o: libs/gopt/gopt-errors.c.o
+
+.PHONY : libs/gopt/gopt-errors.o
+
+# target to build an object file
+libs/gopt/gopt-errors.c.o:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/libs/gopt/gopt-errors.c.o
+.PHONY : libs/gopt/gopt-errors.c.o
+
+libs/gopt/gopt-errors.i: libs/gopt/gopt-errors.c.i
+
+.PHONY : libs/gopt/gopt-errors.i
+
+# target to preprocess a source file
+libs/gopt/gopt-errors.c.i:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/libs/gopt/gopt-errors.c.i
+.PHONY : libs/gopt/gopt-errors.c.i
+
+libs/gopt/gopt-errors.s: libs/gopt/gopt-errors.c.s
+
+.PHONY : libs/gopt/gopt-errors.s
+
+# target to generate assembly for a file
+libs/gopt/gopt-errors.c.s:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/libs/gopt/gopt-errors.c.s
+.PHONY : libs/gopt/gopt-errors.c.s
+
+libs/gopt/gopt.o: libs/gopt/gopt.c.o
+
+.PHONY : libs/gopt/gopt.o
+
+# target to build an object file
+libs/gopt/gopt.c.o:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/libs/gopt/gopt.c.o
+.PHONY : libs/gopt/gopt.c.o
+
+libs/gopt/gopt.i: libs/gopt/gopt.c.i
+
+.PHONY : libs/gopt/gopt.i
+
+# target to preprocess a source file
+libs/gopt/gopt.c.i:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/libs/gopt/gopt.c.i
+.PHONY : libs/gopt/gopt.c.i
+
+libs/gopt/gopt.s: libs/gopt/gopt.c.s
+
+.PHONY : libs/gopt/gopt.s
+
+# target to generate assembly for a file
+libs/gopt/gopt.c.s:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/libs/gopt/gopt.c.s
+.PHONY : libs/gopt/gopt.c.s
 
 main.o: main.cpp.o
 
@@ -142,7 +196,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -151,7 +205,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -160,7 +214,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/Colour.o: src/Colour.cpp.o
@@ -169,7 +223,7 @@ src/Colour.o: src/Colour.cpp.o
 
 # target to build an object file
 src/Colour.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Colour.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/Colour.cpp.o
 .PHONY : src/Colour.cpp.o
 
 src/Colour.i: src/Colour.cpp.i
@@ -178,7 +232,7 @@ src/Colour.i: src/Colour.cpp.i
 
 # target to preprocess a source file
 src/Colour.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Colour.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/Colour.cpp.i
 .PHONY : src/Colour.cpp.i
 
 src/Colour.s: src/Colour.cpp.s
@@ -187,7 +241,7 @@ src/Colour.s: src/Colour.cpp.s
 
 # target to generate assembly for a file
 src/Colour.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Colour.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/Colour.cpp.s
 .PHONY : src/Colour.cpp.s
 
 src/Queue.o: src/Queue.cpp.o
@@ -196,7 +250,7 @@ src/Queue.o: src/Queue.cpp.o
 
 # target to build an object file
 src/Queue.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Queue.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/Queue.cpp.o
 .PHONY : src/Queue.cpp.o
 
 src/Queue.i: src/Queue.cpp.i
@@ -205,7 +259,7 @@ src/Queue.i: src/Queue.cpp.i
 
 # target to preprocess a source file
 src/Queue.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Queue.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/Queue.cpp.i
 .PHONY : src/Queue.cpp.i
 
 src/Queue.s: src/Queue.cpp.s
@@ -214,7 +268,7 @@ src/Queue.s: src/Queue.cpp.s
 
 # target to generate assembly for a file
 src/Queue.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/Queue.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/Queue.cpp.s
 .PHONY : src/Queue.cpp.s
 
 src/controller/Controller44.o: src/controller/Controller44.cpp.o
@@ -223,7 +277,7 @@ src/controller/Controller44.o: src/controller/Controller44.cpp.o
 
 # target to build an object file
 src/controller/Controller44.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/Controller44.cpp.o
 .PHONY : src/controller/Controller44.cpp.o
 
 src/controller/Controller44.i: src/controller/Controller44.cpp.i
@@ -232,7 +286,7 @@ src/controller/Controller44.i: src/controller/Controller44.cpp.i
 
 # target to preprocess a source file
 src/controller/Controller44.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/Controller44.cpp.i
 .PHONY : src/controller/Controller44.cpp.i
 
 src/controller/Controller44.s: src/controller/Controller44.cpp.s
@@ -241,7 +295,7 @@ src/controller/Controller44.s: src/controller/Controller44.cpp.s
 
 # target to generate assembly for a file
 src/controller/Controller44.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Controller44.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/Controller44.cpp.s
 .PHONY : src/controller/Controller44.cpp.s
 
 src/controller/GenericController.o: src/controller/GenericController.cpp.o
@@ -250,7 +304,7 @@ src/controller/GenericController.o: src/controller/GenericController.cpp.o
 
 # target to build an object file
 src/controller/GenericController.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/GenericController.cpp.o
 .PHONY : src/controller/GenericController.cpp.o
 
 src/controller/GenericController.i: src/controller/GenericController.cpp.i
@@ -259,7 +313,7 @@ src/controller/GenericController.i: src/controller/GenericController.cpp.i
 
 # target to preprocess a source file
 src/controller/GenericController.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/GenericController.cpp.i
 .PHONY : src/controller/GenericController.cpp.i
 
 src/controller/GenericController.s: src/controller/GenericController.cpp.s
@@ -268,7 +322,7 @@ src/controller/GenericController.s: src/controller/GenericController.cpp.s
 
 # target to generate assembly for a file
 src/controller/GenericController.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/GenericController.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/GenericController.cpp.s
 .PHONY : src/controller/GenericController.cpp.s
 
 src/controller/LircWrapper.o: src/controller/LircWrapper.cpp.o
@@ -277,7 +331,7 @@ src/controller/LircWrapper.o: src/controller/LircWrapper.cpp.o
 
 # target to build an object file
 src/controller/LircWrapper.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/LircWrapper.cpp.o
 .PHONY : src/controller/LircWrapper.cpp.o
 
 src/controller/LircWrapper.i: src/controller/LircWrapper.cpp.i
@@ -286,7 +340,7 @@ src/controller/LircWrapper.i: src/controller/LircWrapper.cpp.i
 
 # target to preprocess a source file
 src/controller/LircWrapper.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/LircWrapper.cpp.i
 .PHONY : src/controller/LircWrapper.cpp.i
 
 src/controller/LircWrapper.s: src/controller/LircWrapper.cpp.s
@@ -295,7 +349,7 @@ src/controller/LircWrapper.s: src/controller/LircWrapper.cpp.s
 
 # target to generate assembly for a file
 src/controller/LircWrapper.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/LircWrapper.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/LircWrapper.cpp.s
 .PHONY : src/controller/LircWrapper.cpp.s
 
 src/controller/Remote44.o: src/controller/Remote44.cpp.o
@@ -304,7 +358,7 @@ src/controller/Remote44.o: src/controller/Remote44.cpp.o
 
 # target to build an object file
 src/controller/Remote44.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/Remote44.cpp.o
 .PHONY : src/controller/Remote44.cpp.o
 
 src/controller/Remote44.i: src/controller/Remote44.cpp.i
@@ -313,7 +367,7 @@ src/controller/Remote44.i: src/controller/Remote44.cpp.i
 
 # target to preprocess a source file
 src/controller/Remote44.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/Remote44.cpp.i
 .PHONY : src/controller/Remote44.cpp.i
 
 src/controller/Remote44.s: src/controller/Remote44.cpp.s
@@ -322,7 +376,7 @@ src/controller/Remote44.s: src/controller/Remote44.cpp.s
 
 # target to generate assembly for a file
 src/controller/Remote44.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/controller/Remote44.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/controller/Remote44.cpp.s
 .PHONY : src/controller/Remote44.cpp.s
 
 src/emulator/ColourDisplay.o: src/emulator/ColourDisplay.cpp.o
@@ -331,7 +385,7 @@ src/emulator/ColourDisplay.o: src/emulator/ColourDisplay.cpp.o
 
 # target to build an object file
 src/emulator/ColourDisplay.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/ColourDisplay.cpp.o
 .PHONY : src/emulator/ColourDisplay.cpp.o
 
 src/emulator/ColourDisplay.i: src/emulator/ColourDisplay.cpp.i
@@ -340,7 +394,7 @@ src/emulator/ColourDisplay.i: src/emulator/ColourDisplay.cpp.i
 
 # target to preprocess a source file
 src/emulator/ColourDisplay.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/ColourDisplay.cpp.i
 .PHONY : src/emulator/ColourDisplay.cpp.i
 
 src/emulator/ColourDisplay.s: src/emulator/ColourDisplay.cpp.s
@@ -349,7 +403,7 @@ src/emulator/ColourDisplay.s: src/emulator/ColourDisplay.cpp.s
 
 # target to generate assembly for a file
 src/emulator/ColourDisplay.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/ColourDisplay.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/ColourDisplay.cpp.s
 .PHONY : src/emulator/ColourDisplay.cpp.s
 
 src/emulator/KeyboardListener.o: src/emulator/KeyboardListener.cpp.o
@@ -358,7 +412,7 @@ src/emulator/KeyboardListener.o: src/emulator/KeyboardListener.cpp.o
 
 # target to build an object file
 src/emulator/KeyboardListener.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/KeyboardListener.cpp.o
 .PHONY : src/emulator/KeyboardListener.cpp.o
 
 src/emulator/KeyboardListener.i: src/emulator/KeyboardListener.cpp.i
@@ -367,7 +421,7 @@ src/emulator/KeyboardListener.i: src/emulator/KeyboardListener.cpp.i
 
 # target to preprocess a source file
 src/emulator/KeyboardListener.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/KeyboardListener.cpp.i
 .PHONY : src/emulator/KeyboardListener.cpp.i
 
 src/emulator/KeyboardListener.s: src/emulator/KeyboardListener.cpp.s
@@ -376,7 +430,7 @@ src/emulator/KeyboardListener.s: src/emulator/KeyboardListener.cpp.s
 
 # target to generate assembly for a file
 src/emulator/KeyboardListener.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/KeyboardListener.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/KeyboardListener.cpp.s
 .PHONY : src/emulator/KeyboardListener.cpp.s
 
 src/emulator/VirtualController.o: src/emulator/VirtualController.cpp.o
@@ -385,7 +439,7 @@ src/emulator/VirtualController.o: src/emulator/VirtualController.cpp.o
 
 # target to build an object file
 src/emulator/VirtualController.cpp.o:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.o
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/VirtualController.cpp.o
 .PHONY : src/emulator/VirtualController.cpp.o
 
 src/emulator/VirtualController.i: src/emulator/VirtualController.cpp.i
@@ -394,7 +448,7 @@ src/emulator/VirtualController.i: src/emulator/VirtualController.cpp.i
 
 # target to preprocess a source file
 src/emulator/VirtualController.cpp.i:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.i
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/VirtualController.cpp.i
 .PHONY : src/emulator/VirtualController.cpp.i
 
 src/emulator/VirtualController.s: src/emulator/VirtualController.cpp.s
@@ -403,8 +457,116 @@ src/emulator/VirtualController.s: src/emulator/VirtualController.cpp.s
 
 # target to generate assembly for a file
 src/emulator/VirtualController.cpp.s:
-	$(MAKE) -f CMakeFiles/rgb_me.dir/build.make CMakeFiles/rgb_me.dir/src/emulator/VirtualController.cpp.s
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/emulator/VirtualController.cpp.s
 .PHONY : src/emulator/VirtualController.cpp.s
+
+src/routines/BeatMatch.o: src/routines/BeatMatch.cpp.o
+
+.PHONY : src/routines/BeatMatch.o
+
+# target to build an object file
+src/routines/BeatMatch.cpp.o:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/BeatMatch.cpp.o
+.PHONY : src/routines/BeatMatch.cpp.o
+
+src/routines/BeatMatch.i: src/routines/BeatMatch.cpp.i
+
+.PHONY : src/routines/BeatMatch.i
+
+# target to preprocess a source file
+src/routines/BeatMatch.cpp.i:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/BeatMatch.cpp.i
+.PHONY : src/routines/BeatMatch.cpp.i
+
+src/routines/BeatMatch.s: src/routines/BeatMatch.cpp.s
+
+.PHONY : src/routines/BeatMatch.s
+
+# target to generate assembly for a file
+src/routines/BeatMatch.cpp.s:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/BeatMatch.cpp.s
+.PHONY : src/routines/BeatMatch.cpp.s
+
+src/routines/GenericRoutine.o: src/routines/GenericRoutine.cpp.o
+
+.PHONY : src/routines/GenericRoutine.o
+
+# target to build an object file
+src/routines/GenericRoutine.cpp.o:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/GenericRoutine.cpp.o
+.PHONY : src/routines/GenericRoutine.cpp.o
+
+src/routines/GenericRoutine.i: src/routines/GenericRoutine.cpp.i
+
+.PHONY : src/routines/GenericRoutine.i
+
+# target to preprocess a source file
+src/routines/GenericRoutine.cpp.i:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/GenericRoutine.cpp.i
+.PHONY : src/routines/GenericRoutine.cpp.i
+
+src/routines/GenericRoutine.s: src/routines/GenericRoutine.cpp.s
+
+.PHONY : src/routines/GenericRoutine.s
+
+# target to generate assembly for a file
+src/routines/GenericRoutine.cpp.s:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/GenericRoutine.cpp.s
+.PHONY : src/routines/GenericRoutine.cpp.s
+
+src/routines/Ifttt.o: src/routines/Ifttt.cpp.o
+
+.PHONY : src/routines/Ifttt.o
+
+# target to build an object file
+src/routines/Ifttt.cpp.o:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/Ifttt.cpp.o
+.PHONY : src/routines/Ifttt.cpp.o
+
+src/routines/Ifttt.i: src/routines/Ifttt.cpp.i
+
+.PHONY : src/routines/Ifttt.i
+
+# target to preprocess a source file
+src/routines/Ifttt.cpp.i:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/Ifttt.cpp.i
+.PHONY : src/routines/Ifttt.cpp.i
+
+src/routines/Ifttt.s: src/routines/Ifttt.cpp.s
+
+.PHONY : src/routines/Ifttt.s
+
+# target to generate assembly for a file
+src/routines/Ifttt.cpp.s:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/Ifttt.cpp.s
+.PHONY : src/routines/Ifttt.cpp.s
+
+src/routines/SunriseSunset.o: src/routines/SunriseSunset.cpp.o
+
+.PHONY : src/routines/SunriseSunset.o
+
+# target to build an object file
+src/routines/SunriseSunset.cpp.o:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/SunriseSunset.cpp.o
+.PHONY : src/routines/SunriseSunset.cpp.o
+
+src/routines/SunriseSunset.i: src/routines/SunriseSunset.cpp.i
+
+.PHONY : src/routines/SunriseSunset.i
+
+# target to preprocess a source file
+src/routines/SunriseSunset.cpp.i:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/SunriseSunset.cpp.i
+.PHONY : src/routines/SunriseSunset.cpp.i
+
+src/routines/SunriseSunset.s: src/routines/SunriseSunset.cpp.s
+
+.PHONY : src/routines/SunriseSunset.s
+
+# target to generate assembly for a file
+src/routines/SunriseSunset.cpp.s:
+	$(MAKE) -f CMakeFiles/rgbtk.dir/build.make CMakeFiles/rgbtk.dir/src/routines/SunriseSunset.cpp.s
+.PHONY : src/routines/SunriseSunset.cpp.s
 
 test/main.o: test/main.cpp.o
 
@@ -469,7 +631,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tests"
-	@echo "... rgb_me"
+	@echo "... rgbtk"
+	@echo "... libs/gopt/gopt-errors.o"
+	@echo "... libs/gopt/gopt-errors.i"
+	@echo "... libs/gopt/gopt-errors.s"
+	@echo "... libs/gopt/gopt.o"
+	@echo "... libs/gopt/gopt.i"
+	@echo "... libs/gopt/gopt.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -500,6 +668,18 @@ help:
 	@echo "... src/emulator/VirtualController.o"
 	@echo "... src/emulator/VirtualController.i"
 	@echo "... src/emulator/VirtualController.s"
+	@echo "... src/routines/BeatMatch.o"
+	@echo "... src/routines/BeatMatch.i"
+	@echo "... src/routines/BeatMatch.s"
+	@echo "... src/routines/GenericRoutine.o"
+	@echo "... src/routines/GenericRoutine.i"
+	@echo "... src/routines/GenericRoutine.s"
+	@echo "... src/routines/Ifttt.o"
+	@echo "... src/routines/Ifttt.i"
+	@echo "... src/routines/Ifttt.s"
+	@echo "... src/routines/SunriseSunset.o"
+	@echo "... src/routines/SunriseSunset.i"
+	@echo "... src/routines/SunriseSunset.s"
 	@echo "... test/main.o"
 	@echo "... test/main.i"
 	@echo "... test/main.s"

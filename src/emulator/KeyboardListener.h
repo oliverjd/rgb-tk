@@ -1,5 +1,5 @@
-#ifndef RGB_ME_KEYBOARDLISTENER_H
-#define RGB_ME_KEYBOARDLISTENER_H
+#ifndef RGBTK_KEYBOARDLISTENER_H
+#define RGBTK_KEYBOARDLISTENER_H
 
 
 #include "ncurses.h"
@@ -10,7 +10,7 @@ class GenericController;
 
 class KeyboardListener {
 public:
-    KeyboardListener(GenericController*);
+    explicit KeyboardListener(GenericController*);
 private:
     void listenForKeypress();
 
@@ -39,4 +39,4 @@ private:
 };
 
 
-#endif //RGB_ME_KEYBOARDLISTENER_H
+#endif //RGBTK_KEYBOARDLISTENER_H

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/tests.dir/test/tests.cpp.o CMakeFiles/tests.dir/test/main.cpp.o  -o tests 
+/usr/bin/c++  -g   CMakeFiles/tests.dir/test/tests.cpp.o CMakeFiles/tests.dir/test/main.cpp.o  -o tests  -L/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/lirc/lib  -L/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/ncurses/lib  -L/home/ojd/Data/Documents/Projects/cpp/rgbtk/libs/boost/lib 

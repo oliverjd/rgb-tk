@@ -1,5 +1,5 @@
-#ifndef RGB_ME_QUEUE_H
-#define RGB_ME_QUEUE_H
+#ifndef RGBTK_QUEUE_H
+#define RGBTK_QUEUE_H
 
 #include <queue>
 #include <mutex>
@@ -8,7 +8,7 @@
 template<class T>
 class Queue {
 public:
-    Queue() {}
+    Queue();
 
     void push(T* elem);
     T* pop();
@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif //RGB_ME_QUEUE_H
+#endif //RGBTK_QUEUE_H

@@ -93,9 +93,9 @@ KeyboardListener.keyPressed -> GenericController.newFunction
 
 TODO:
 
-1. move emulator stuff to its own folder
-2. move the junk from rgb44.h into controller44keystate and rename it to controller44key
-3. thread out the 'gui' (emulator)
+1. move emulator stuff to its own folder - DONE
+2. move the junk from rgb44.h into controller44keystate and rename it to controller44key - DONE
+3. thread out the 'gui' (emulator) - DONE
 4. write some tests
 
 then:
@@ -103,3 +103,41 @@ then:
 - start thinking about automation routines
 - think about moving config to a yaml file
 
+
+
+why does virtualcontroller need a pointer to genericcontroller? it really shouldn't
+
+also consider making virtualcontroller do its own thread internally so that's all taken care of and hidden, so:
+
+- call virtualcontroller->receiveCommand() or whatever and that causes virtualpointer to add an entry to its own internal queue, which its internal thread reads and sorts out separately, so you can guarantee that receiveCommand() is non-blocking
+
+
+
+the reason virtualController needs a pointer to genericController is because it owns the keybaordListener object and so must send its own command to the genericController..
+
+if keyboardListener and
+
+
+issue:
+- virtualController needs to call genericController by itself only
+- genericController needs to be able to call virtualController both by itself and in response to virtualController i.e. any time
+- both are owned by main
+
+
+i'd say most important thing is for genericController to know about virtualController i.e. make virtualcontroller first
+then make genericcontroller using virtualcontroller
+then give virtualcontroller the reference to genericcontroller
+
+why not have virtualController call genericController and pass a reference to be
+
+
+virtalcontroller has addCommandToQueue which runs in its main thread, then it spins off its own thread which monitors the queue
+virtualController definitely needs a thread for the keyboardListener's get character loop
+
+
+simple things todo now:
+
+- anywhere there is printw() replace it with a virtualController->print() which is threadsafe, so you can turn logs on/off etc. in future
+- likewise, put proper threadsafe queue support in any inter-thread functions (work out what they are first)
+- flesh out and refactor the ifttt
+- write proper build instructions etc.

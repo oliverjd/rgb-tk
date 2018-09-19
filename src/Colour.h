@@ -1,5 +1,5 @@
-#ifndef RGB_ME_COLOUR_H
-#define RGB_ME_COLOUR_H
+#ifndef RGBTK_COLOUR_H
+#define RGBTK_COLOUR_H
 
 
 class Colour {
@@ -15,4 +15,4 @@ public:
 };
 
 
-#endif //RGB_ME_COLOUR_H
+#endif //RGBTK_COLOUR_H

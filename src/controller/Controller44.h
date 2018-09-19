@@ -1,5 +1,5 @@
-#ifndef RGB_ME_CONTROLLER44KEY_H
-#define RGB_ME_CONTROLLER44KEY_H
+#ifndef RGBTK_CONTROLLER44KEY_H
+#define RGBTK_CONTROLLER44KEY_H
 
 
 #include <vector>
@@ -50,4 +50,4 @@ private:
 };
 
 
-#endif //RGB_ME_CONTROLLER44KEY_H
+#endif //RGBTK_CONTROLLER44KEY_H

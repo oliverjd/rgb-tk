@@ -1,6 +1,9 @@
 #include "Queue.h"
 
 template<class T>
+Queue<T>::Queue() = default;
+
+template<class T>
 void Queue<T>::push(T *elem) {
     std::unique_lock<std::mutex> lock(m);
     if(elem != nullptr) {
