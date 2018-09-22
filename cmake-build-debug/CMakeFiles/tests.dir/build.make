@@ -43,10 +43,10 @@ RM = /home/ojd/packages/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ojd/Data/Documents/Projects/cpp/rgbtk
+CMAKE_SOURCE_DIR = /home/ojd/Documents/Projects/cpp/rgb-tk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/tests.dir/flags.make
 
 CMakeFiles/tests.dir/test/tests.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/tests.cpp.o: ../test/tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/test/tests.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/tests.cpp.o -c /home/ojd/Data/Documents/Projects/cpp/rgbtk/test/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/test/tests.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/tests.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-tk/test/tests.cpp
 
 CMakeFiles/tests.dir/test/tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Data/Documents/Projects/cpp/rgbtk/test/tests.cpp > CMakeFiles/tests.dir/test/tests.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-tk/test/tests.cpp > CMakeFiles/tests.dir/test/tests.cpp.i
 
 CMakeFiles/tests.dir/test/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Data/Documents/Projects/cpp/rgbtk/test/tests.cpp -o CMakeFiles/tests.dir/test/tests.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-tk/test/tests.cpp -o CMakeFiles/tests.dir/test/tests.cpp.s
 
 CMakeFiles/tests.dir/test/main.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/main.cpp.o: ../test/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/test/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/main.cpp.o -c /home/ojd/Data/Documents/Projects/cpp/rgbtk/test/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/test/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/test/main.cpp.o -c /home/ojd/Documents/Projects/cpp/rgb-tk/test/main.cpp
 
 CMakeFiles/tests.dir/test/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/test/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Data/Documents/Projects/cpp/rgbtk/test/main.cpp > CMakeFiles/tests.dir/test/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ojd/Documents/Projects/cpp/rgb-tk/test/main.cpp > CMakeFiles/tests.dir/test/main.cpp.i
 
 CMakeFiles/tests.dir/test/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/test/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Data/Documents/Projects/cpp/rgbtk/test/main.cpp -o CMakeFiles/tests.dir/test/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ojd/Documents/Projects/cpp/rgb-tk/test/main.cpp -o CMakeFiles/tests.dir/test/main.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
@@ -95,7 +95,7 @@ tests: CMakeFiles/tests.dir/test/tests.cpp.o
 tests: CMakeFiles/tests.dir/test/main.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ojd/Data/Documents/Projects/cpp/rgbtk /home/ojd/Data/Documents/Projects/cpp/rgbtk /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ojd/Documents/Projects/cpp/rgb-tk /home/ojd/Documents/Projects/cpp/rgb-tk /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

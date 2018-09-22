@@ -1,5 +1,5 @@
-#ifndef RGBTK_BEATMATCH_H
-#define RGBTK_BEATMATCH_H
+#ifndef RGB_TK_BEATMATCH_H
+#define RGB_TK_BEATMATCH_H
 
 
 class BeatMatch {
@@ -7,4 +7,4 @@ class BeatMatch {
 };
 
 
-#endif //RGBTK_BEATMATCH_H
+#endif //RGB_TK_BEATMATCH_H

@@ -1,4 +1,4 @@
-/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/tests.dir
-/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/rgbtk.dir
+/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/tests.dir
+/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/rgb-tk.dir

@@ -1,5 +1,5 @@
-#ifndef RGBTK_LIRCWRAPPER_H
-#define RGBTK_LIRCWRAPPER_H
+#ifndef RGB_TK_LIRCWRAPPER_H
+#define RGB_TK_LIRCWRAPPER_H
 
 
 #include <string>
@@ -16,4 +16,4 @@ private:
 };
 
 
-#endif //RGBTK_LIRCWRAPPER_H
+#endif //RGB_TK_LIRCWRAPPER_H

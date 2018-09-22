@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ojd/Data/Documents/Projects/cpp/rgbtk/test/main.cpp" "/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/tests.dir/test/main.cpp.o"
-  "/home/ojd/Data/Documents/Projects/cpp/rgbtk/test/tests.cpp" "/home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug/CMakeFiles/tests.dir/test/tests.cpp.o"
+  "/home/ojd/Documents/Projects/cpp/rgb-tk/test/main.cpp" "/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/tests.dir/test/main.cpp.o"
+  "/home/ojd/Documents/Projects/cpp/rgb-tk/test/tests.cpp" "/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug/CMakeFiles/tests.dir/test/tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

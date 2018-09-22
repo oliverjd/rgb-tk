@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt-errors.c
+stdlib.h
+-
+stdio.h
+-
+sysexits.h
+-
+gopt.h
+/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt.h
+
+/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt.c
+string.h
+-
+strings.h
+-
+gopt.h
+/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt.h
+
+/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt.h
+

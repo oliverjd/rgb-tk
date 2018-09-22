@@ -1,5 +1,5 @@
-#ifndef RGBTK_COLOURDISPLAY_H
-#define RGBTK_COLOURDISPLAY_H
+#ifndef RGB_TK_COLOURDISPLAY_H
+#define RGB_TK_COLOURDISPLAY_H
 
 
 class ColourDisplay {
@@ -12,4 +12,4 @@ private:
 };
 
 
-#endif //RGBTK_COLOURDISPLAY_H
+#endif //RGB_TK_COLOURDISPLAY_H

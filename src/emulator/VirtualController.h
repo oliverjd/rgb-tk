@@ -1,5 +1,5 @@
-#ifndef RGBTK_VIRTUALCONTROLLER_H
-#define RGBTK_VIRTUALCONTROLLER_H
+#ifndef RGB_TK_VIRTUALCONTROLLER_H
+#define RGB_TK_VIRTUALCONTROLLER_H
 
 #include "../controller/Remote44.h"
 #include "../controller/Controller44.h"
@@ -38,4 +38,4 @@ private:
 };
 
 
-#endif //RGBTK_VIRTUALCONTROLLER_H
+#endif //RGB_TK_VIRTUALCONTROLLER_H

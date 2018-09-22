@@ -1,4 +1,4 @@
-/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ojd/Data/Documents/Projects/cpp/rgbtk
+/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ojd/Documents/Projects/cpp/rgb-tk
 -- Boost version: 1.65.1
 -- Found the following Boost libraries:
 --   regex
@@ -9,4 +9,4 @@
 --   atomic
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ojd/Data/Documents/Projects/cpp/rgbtk/cmake-build-debug
+-- Build files have been written to: /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-debug

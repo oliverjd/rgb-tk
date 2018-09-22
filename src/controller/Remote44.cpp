@@ -11,6 +11,5 @@ Remote44::Remote44(VirtualController* virtualController) :
 
 void Remote44::sendButtonPress(Button button) {
     lircWrapper->sendOnce(buttonCodes.at(button));
-    //std::this_thread::sleep_for(std::chrono::milliseconds(millisecondsBetweenButtonPresses));
     virtualController->receiveRemoteCommand(button);
 }

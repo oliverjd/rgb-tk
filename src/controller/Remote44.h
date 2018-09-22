@@ -1,5 +1,5 @@
-#ifndef RGBTK_REMOTE44KEY_H
-#define RGBTK_REMOTE44KEY_H
+#ifndef RGB_TK_REMOTE44KEY_H
+#define RGB_TK_REMOTE44KEY_H
 
 #include "LircWrapper.h"
 #include "../emulator/VirtualController.h"
@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif //RGBTK_REMOTE44KEY_H
+#endif //RGB_TK_REMOTE44KEY_H

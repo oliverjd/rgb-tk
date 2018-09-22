@@ -1,5 +1,5 @@
-#ifndef RGBTK_SUNRISESUNSET_H
-#define RGBTK_SUNRISESUNSET_H
+#ifndef RGB_TK_SUNRISESUNSET_H
+#define RGB_TK_SUNRISESUNSET_H
 
 
 class SunriseSunset {
@@ -7,4 +7,4 @@ class SunriseSunset {
 };
 
 
-#endif //RGBTK_SUNRISESUNSET_H
+#endif //RGB_TK_SUNRISESUNSET_H

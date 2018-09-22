@@ -141,3 +141,4 @@ simple things todo now:
 - likewise, put proper threadsafe queue support in any inter-thread functions (work out what they are first)
 - flesh out and refactor the ifttt
 - write proper build instructions etc.
+- replace sendButtonPress with something non-blocking in lirc?

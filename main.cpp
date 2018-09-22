@@ -1,7 +1,7 @@
 #include <iostream>
 #include <csignal>
 
-#include "src/routines/Ifttt.h"
+#include "src/routines/RestServer.h"
 #include "src/controller/GenericController.h"
 #include "src/emulator/VirtualController.h"
 
@@ -20,14 +20,13 @@ int main(int argc, char **argv) {
 //    argc = gopt(argv, options);
 //    gopt_errors(argv[0], options);
 
-
     std::unique_ptr<VirtualController> virtualController;
     std::unique_ptr<GenericController> controller;
     virtualController = std::make_unique<VirtualController>();
     controller = std::make_unique<GenericController>(virtualController.get());
     virtualController->setupKeyboardListener(controller.get());
 
-    Ifttt ifttt(controller.get());
+    RestServer server(8080, "ledpwd", controller.get());
 
     while(virtualController->alive()) {
         std::this_thread::sleep_for(std::chrono::seconds(1));

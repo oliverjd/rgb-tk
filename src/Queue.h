@@ -1,5 +1,5 @@
-#ifndef RGBTK_QUEUE_H
-#define RGBTK_QUEUE_H
+#ifndef RGB_TK_QUEUE_H
+#define RGB_TK_QUEUE_H
 
 #include <queue>
 #include <mutex>
@@ -20,4 +20,4 @@ private:
 };
 
 
-#endif //RGBTK_QUEUE_H
+#endif //RGB_TK_QUEUE_H

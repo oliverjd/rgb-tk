@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rgb-tk"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/lirc/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/ncurses/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/simple-web-server/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/boost/include"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include"/>
+					<Add directory="/usr/local/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/lirc/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/ncurses/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/simple-web-server/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/boost/include"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include"/>
+					<Add directory="/usr/local/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgb-tk">
+				<Option output="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/rgb-tk" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/lirc/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/ncurses/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/simple-web-server/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/boost/include"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include"/>
+					<Add directory="/usr/local/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 rgb-tk"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgb-tk/fast">
+				<Option output="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/rgb-tk" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/lirc/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/ncurses/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/simple-web-server/include"/>
+					<Add directory="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/boost/include"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include"/>
+					<Add directory="/usr/local/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc-cross/arm-linux-gnueabihf/7/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/usr/include/arm-linux-gnueabihf"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 rgb-tk/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt-errors.c">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt.c">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/libs/gopt/gopt.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/main.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/Colour.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/Colour.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/Queue.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/Queue.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/Controller44.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/Controller44.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/GenericController.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/GenericController.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/LircWrapper.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/LircWrapper.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/Remote44.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/controller/Remote44.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/emulator/ColourDisplay.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/emulator/ColourDisplay.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/emulator/KeyboardListener.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/emulator/KeyboardListener.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/emulator/VirtualController.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/emulator/VirtualController.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/BeatMatch.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/BeatMatch.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/GenericRoutine.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/GenericRoutine.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/RestServer.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/RestServer.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/SunriseSunset.cpp">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/src/routines/SunriseSunset.h">
+			<Option target="rgb-tk"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/test/main.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/test/tests.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/ojd/Documents/Projects/cpp/rgb-tk/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

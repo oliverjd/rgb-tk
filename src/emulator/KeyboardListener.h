@@ -1,5 +1,5 @@
-#ifndef RGBTK_KEYBOARDLISTENER_H
-#define RGBTK_KEYBOARDLISTENER_H
+#ifndef RGB_TK_KEYBOARDLISTENER_H
+#define RGB_TK_KEYBOARDLISTENER_H
 
 
 #include "ncurses.h"
@@ -39,4 +39,4 @@ private:
 };
 
 
-#endif //RGBTK_KEYBOARDLISTENER_H
+#endif //RGB_TK_KEYBOARDLISTENER_H

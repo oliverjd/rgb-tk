@@ -1,8 +1,9 @@
-#ifndef RGBTK_GENERICCONTROLLER_H
-#define RGBTK_GENERICCONTROLLER_H
+#ifndef RGB_TK_GENERICCONTROLLER_H
+#define RGB_TK_GENERICCONTROLLER_H
 
 
 #include <memory>
+#include <mutex>
 #include "../emulator/VirtualController.h"
 #include "Controller44.h"
 #include "Remote44.h"
@@ -15,8 +16,7 @@ public:
     explicit GenericController(VirtualController*);
 
     void togglePower();
-    void turnPowerOn();
-    void turnPowerOff();
+    void turnPower(bool);
     void switchToPreset(char, char);
     void switchToDiy(char);
     void modifyCurrentDiy(int, bool);
@@ -24,8 +24,9 @@ public:
 
 private:
     std::unique_ptr<Remote44> remote44;
+    std::mutex m;
 
 };
 
 
-#endif //RGBTK_GENERICCONTROLLER_H
+#endif //RGB_TK_GENERICCONTROLLER_H

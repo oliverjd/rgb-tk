@@ -1,5 +1,5 @@
-#ifndef RGBTK_GENERICROUTINE_H
-#define RGBTK_GENERICROUTINE_H
+#ifndef RGB_TK_GENERICROUTINE_H
+#define RGB_TK_GENERICROUTINE_H
 
 
 class GenericRoutine {
@@ -7,4 +7,4 @@ class GenericRoutine {
 };
 
 
-#endif //RGBTK_GENERICROUTINE_H
+#endif //RGB_TK_GENERICROUTINE_H
