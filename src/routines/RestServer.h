@@ -1,9 +1,8 @@
-#ifndef RGB_TK_RESTSERVER_H
-#define RGB_TK_RESTSERVER_H
+#pragma once
 
+#include <server_http.hpp>
 
 #include "../controller/GenericController.h"
-#include "server_http.hpp"
 
 using HttpServer = SimpleWeb::Server<SimpleWeb::HTTP>;
 
@@ -20,5 +19,3 @@ private:
     void startServer();
 };
 
-
-#endif //RGB_TK_RESTSERVER_H

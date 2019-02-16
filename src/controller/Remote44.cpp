@@ -1,8 +1,9 @@
-#include "Remote44.h"
-#include "LircWrapper.h"
 #include <string>
 #include <thread>
 #include <iostream>
+
+#include "Remote44.h"
+#include "LircWrapper.h"
 #include "Controller44.h"
 
 Remote44::Remote44(VirtualController* virtualController) :

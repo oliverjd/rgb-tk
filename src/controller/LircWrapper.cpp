@@ -1,7 +1,7 @@
-#include "LircWrapper.h"
-
 #include <ncurses.h>
 #include <lirc_client.h>
+
+#include "LircWrapper.h"
 
 LircWrapper::LircWrapper() : nameOfRemote("rgb44") {
     fd = lirc_get_local_socket(nullptr, 0);

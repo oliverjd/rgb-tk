@@ -1,5 +1,6 @@
-#include "KeyboardListener.h"
 #include <ncurses.h>
+
+#include "KeyboardListener.h"
 
 KeyboardListener::KeyboardListener(GenericController* genericController) :
         genericController(genericController) {

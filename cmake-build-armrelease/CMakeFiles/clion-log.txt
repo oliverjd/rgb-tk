@@ -1,5 +1,0 @@
-/home/ojd/packages/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/arm-linux-gnueabihf-gcc -DCMAKE_CXX_COMPILER=/usr/bin/arm-linux-gnueabihf-g++ -G "CodeBlocks - Unix Makefiles" /home/ojd/Documents/Projects/cpp/rgb-tk
--- Could NOT find Boost
--- Configuring done
--- Generating done
--- Build files have been written to: /home/ojd/Documents/Projects/cpp/rgb-tk/cmake-build-armrelease

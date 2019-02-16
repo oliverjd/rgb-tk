@@ -1,10 +1,9 @@
-#ifndef RGB_TK_CONTROLLER44KEY_H
-#define RGB_TK_CONTROLLER44KEY_H
-
+#pragma once
 
 #include <vector>
 #include <map>
 #include <string>
+
 #include "../Colour.h"
 
 class Controller44 {
@@ -49,5 +48,3 @@ private:
     void initialiseKnownState();
 };
 
-
-#endif //RGB_TK_CONTROLLER44KEY_H

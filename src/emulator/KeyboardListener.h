@@ -1,10 +1,9 @@
-#ifndef RGB_TK_KEYBOARDLISTENER_H
-#define RGB_TK_KEYBOARDLISTENER_H
+#pragma once
 
-
-#include "ncurses.h"
-#include "../controller/GenericController.h"
+#include <ncurses.h>
 #include <string>
+
+#include "../controller/GenericController.h"
 
 class GenericController;
 
@@ -39,4 +38,3 @@ private:
 };
 
 
-#endif //RGB_TK_KEYBOARDLISTENER_H

@@ -1,6 +1,7 @@
+#include <map>
+
 #include "Controller44.h"
 #include "Remote44.h"
-#include <map>
 
 Controller44::Controller44() : colour(Colour(0,0,0)),
         diyColours(diyNumbers), brightness(BRIGHTNESS_LEVELS),

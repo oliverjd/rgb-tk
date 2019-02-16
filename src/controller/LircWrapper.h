@@ -1,6 +1,4 @@
-#ifndef RGB_TK_LIRCWRAPPER_H
-#define RGB_TK_LIRCWRAPPER_H
-
+#pragma once
 
 #include <string>
 
@@ -15,5 +13,3 @@ private:
     std::string nameOfRemote;
 };
 
-
-#endif //RGB_TK_LIRCWRAPPER_H

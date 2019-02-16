@@ -1,5 +1,6 @@
-#include "RestServer.h"
 #include <ncurses.h>
+
+#include "RestServer.h"
 
 RestServer::RestServer(unsigned short port, std::string key, GenericController* genericController) :
         key(key),

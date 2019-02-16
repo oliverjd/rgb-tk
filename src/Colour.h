@@ -1,6 +1,4 @@
-#ifndef RGB_TK_COLOUR_H
-#define RGB_TK_COLOUR_H
-
+#pragma once
 
 class Colour {
 public:
@@ -13,6 +11,3 @@ public:
     char presetColour;
     char presetNumber;
 };
-
-
-#endif //RGB_TK_COLOUR_H

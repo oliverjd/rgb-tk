@@ -17,6 +17,13 @@ this is assuming you attach the signal pin of the IR LED to `GPIO_22`.
 
 ## Build instructions:
 
+### Building for x86
+
+
+
+### Building for ARM (e.g. Raspberry Pi)
+
+- g++-arm-linux-gnueabihf Ubuntu package
 
 
 ## Usage:

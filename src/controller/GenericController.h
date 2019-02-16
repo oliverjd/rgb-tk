@@ -1,9 +1,8 @@
-#ifndef RGB_TK_GENERICCONTROLLER_H
-#define RGB_TK_GENERICCONTROLLER_H
-
+#pragma once
 
 #include <memory>
 #include <mutex>
+
 #include "../emulator/VirtualController.h"
 #include "Controller44.h"
 #include "Remote44.h"
@@ -28,5 +27,3 @@ private:
 
 };
 
-
-#endif //RGB_TK_GENERICCONTROLLER_H

@@ -1,6 +1,4 @@
-#ifndef RGB_TK_COLOURDISPLAY_H
-#define RGB_TK_COLOURDISPLAY_H
-
+#pragma once
 
 class ColourDisplay {
 public:
@@ -11,5 +9,3 @@ private:
     void ncursesSetup();
 };
 
-
-#endif //RGB_TK_COLOURDISPLAY_H

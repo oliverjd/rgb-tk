@@ -1,7 +1,8 @@
-#include "ColourDisplay.h"
 #include <ncurses.h>
 #include <cmath>
 #include <string>
+
+#include "ColourDisplay.h"
 
 #define FOREGROUND 0
 #define BACKGROUND 1

@@ -1,15 +1,15 @@
-#ifndef RGB_TK_VIRTUALCONTROLLER_H
-#define RGB_TK_VIRTUALCONTROLLER_H
+#pragma once
+
+#include <map>
+#include <string>
+#include <thread>
+#include <atomic>
 
 #include "../controller/Remote44.h"
 #include "../controller/Controller44.h"
 #include "KeyboardListener.h"
 #include "ColourDisplay.h"
 #include "../controller/GenericController.h"
-#include <map>
-#include <string>
-#include <thread>
-#include <atomic>
 
 class GenericController;
 class KeyboardListener;
@@ -37,5 +37,3 @@ private:
     std::atomic<bool> keyboardThreadAlive;
 };
 
-
-#endif //RGB_TK_VIRTUALCONTROLLER_H

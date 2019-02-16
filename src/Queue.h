@@ -1,5 +1,4 @@
-#ifndef RGB_TK_QUEUE_H
-#define RGB_TK_QUEUE_H
+#pragma once
 
 #include <queue>
 #include <mutex>
@@ -19,5 +18,3 @@ private:
     std::condition_variable cv;
 };
 
-
-#endif //RGB_TK_QUEUE_H

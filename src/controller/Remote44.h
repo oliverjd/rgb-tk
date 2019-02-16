@@ -1,10 +1,10 @@
-#ifndef RGB_TK_REMOTE44KEY_H
-#define RGB_TK_REMOTE44KEY_H
+#pragma once
+
+#include <map>
+#include <memory>
 
 #include "LircWrapper.h"
 #include "../emulator/VirtualController.h"
-#include <map>
-#include <memory>
 #include "Controller44.h"
 
 class VirtualController;
@@ -19,5 +19,3 @@ private:
     std::unique_ptr<LircWrapper> lircWrapper;
 };
 
-
-#endif //RGB_TK_REMOTE44KEY_H
