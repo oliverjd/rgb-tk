@@ -6,6 +6,7 @@ set(CMAKE_CXX_COMPILER_ARM_RELEASE "/usr/bin/arm-linux-gnueabihf-g++")
 
 set(CURSES_INCLUDE_PATH "/usr/include")
 set(CURSES_LIBRARY "/usr/lib/x86_64-linux-gnu/libncurses.so")
+#set(CURSES_LIBRARY "/lib/x64_64-linux-gnu/libncurses.so.")
 
 find_package(Curses REQUIRED)
 
@@ -21,4 +22,3 @@ add_executable(${PROJECT_NAME} src/main.cpp src/controller/Remote44.cpp src/cont
 add_executable(tests test/tests.cpp ${PROJECT_SOURCES} test/main.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${CURSES_LIBRARIES} lirc_client pthread boost_regex boost_system boost_thread)
-
